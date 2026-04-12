@@ -81,7 +81,7 @@ Anything that's part of the contract with the outside world belongs here, even d
 - configuration files (the specification may leave options open like "whatever is natural with the chosen downstream implementation")
 - network protocol (typical example where bits and bytes are fundamental here)
 
-It's okay here to mention common data structures or language constructs (like a tree, queue, dictionary) if that serves clarity and conciseness, yet reference to a specific technology or brand is forbidden.
+It's okay here to mention common computer science concepts (like a tree, queue, dictionary, callback, event loop) if that serves clarity and conciseness, yet reference to a specific technology, brand, or programming language is forbidden.
 
 Anything that's internal, not observable from the outside, does not belong to this step. Example: no mention of internal architecture, or implementation language.
 
