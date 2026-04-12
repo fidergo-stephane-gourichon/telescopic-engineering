@@ -24,8 +24,8 @@ What if adjusting well-known old good practice in a new specific combination can
 - create a new more suitable equilibrium (better than just relinquishing control),
 - restore some of the broken loops?
 
-Telescopic engineering sets your project on tracks
---------------------------------------------------
+Telescopic engineering sets your project on track
+-------------------------------------------------
 
 Telescopic engineering **structures** a project as a **chain of stages** with **progressively detailed documents**, from a narrow upstream end (the `README.md`) to a wide downstream end (the code), with stages in between that are maintained consistent with one another.
 
