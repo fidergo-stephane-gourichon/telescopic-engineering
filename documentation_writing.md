@@ -183,3 +183,13 @@ When a cross-cutting concern grows large enough that its subsections dominate th
 Decision records are historical artifacts whose goal is to record what was evaluated, the reasons, and the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the capability specification stage, at the functional specification stage, at the architecture stage, at the implementation stage. They live in a `decisions/` directory co-located with the stage they affect.
 
 Changelogs are a different beast, they document product history, they are off this track.
+
+### What happens when documents get out of sync?
+
+Documents will drift. The question is not whether, but how to recover.
+
+When a human changed an upstream document, that change is most likely correct and downstream documents should be updated to match. But surprises do happen in the other direction: a bug, a failing test, or an unexpected behavior sometimes reveals a gap or an error in an upstream document that was never noticed. In those cases the upstream document needs correction, not the code.
+
+There is no universal rule for which direction wins -- it must be judged each time based on the evidence.
+
+In practice, the AI is periodically asked to check consistency across all stages, report discrepancies or gaps, and produce a summary for a human reviewer who decides what to fix and where. The telescopic structure makes this tractable: because each stage is short and focused, inconsistencies stand out. The overall effect is that things naturally tend toward order rather than drifting apart.
