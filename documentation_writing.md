@@ -193,3 +193,13 @@ When a human changed an upstream document, that change is most likely correct an
 There is no universal rule for which direction wins -- it must be judged each time based on the evidence.
 
 In practice, the AI is periodically asked to check consistency across all stages, report discrepancies or gaps, and produce a summary for a human reviewer who decides what to fix and where. The telescopic structure makes this tractable: because each stage is short and focused, inconsistencies stand out. The overall effect is that things naturally tend toward order rather than drifting apart.
+
+### Can layers be skipped or merged for small projects?
+
+Yes. The full five-stage chain is the general case, not a minimum requirement. Two approaches:
+
+**Start full, leave stages empty.** Create all stages from the start. Some will be a single sentence ("No architecture decisions beyond what the functional spec implies."). This is lightweight and preserves the structure for when the project grows. The empty stage is a conscious acknowledgment that there is nothing to say at that altitude, not a gap.
+
+**Start minimal, split when needed.** Begin with just README + one specification document + code. As the project grows, split the single spec into capability and functional when it starts serving two distinct purposes, then split further when architecture decisions become non-trivial. The trigger for splitting: a single document starts addressing two clearly different audiences or two different levels of abstraction.
+
+The minimum viable set is: README (what this is) + a specification (what it does and how) + code. Below this, the project has no documentation at all, which is the problem the telescopic system exists to solve.
