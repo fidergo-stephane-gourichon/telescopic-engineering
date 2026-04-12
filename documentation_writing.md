@@ -17,12 +17,7 @@ Adapt proven approaches to the new context
 - Drift and disorder can be dealt with proper structure and discipline.
 - AI is good at some things (spotting and reporting inconsistencies in bigger contexts), while humans remain better at keeping in mind the big picture and controlling at some levels of details.
 
-What if adjusting well-known old good practice in a new specific combination can:
-
-- leverage AI on what it's good at,
-- let humans do what they are good at,
-- create a new more suitable equilibrium (better than just relinquishing control),
-- restore some of the broken loops?
+Combining proven practices in a new way lets AI handle what it does well (consistency checks, propagation across documents), keeps humans in charge of what they do well (big picture, judgment calls), and restores the work rhythm that unstructured AI assistance broke.
 
 Telescopic engineering sets your project on track
 -------------------------------------------------
