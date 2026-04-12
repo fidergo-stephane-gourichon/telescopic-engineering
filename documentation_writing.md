@@ -1,18 +1,22 @@
-# The telescopic documentation system for viable and durable projects
+The telescopic documentation system for viable and durable projects
+===================================================================
 
-## Why this?
+Why this?
+---------
 
 Any project (from the biggest to even very small non-trivial) need some documents to keep things on track. Without them, everything wanders, with them things converge much more easily.
 
 This document elaborates a set of documenation-focused guidelines for project success.
 
-## The issue
+The issue
+---------
 
 - Projects too big to fit at once in a man's mind need some support document or they drift and fail.
 - The issue is even more pressing now that generative AIs and vibe-coding make it easy to get lots of text and code, shifting the cost from creating them to ensuring they fit the intended purpose.
 - Without proper steering, code generation yields hallucinations, feature drift and overall wasted time.
 
-## The solution in short
+The solution in short
+---------------------
 
 We expose here the telescopic documentation system that helps structure a project with a "short side" and a "long side" with steps in between that are maintained consistent with one another.
 
@@ -20,11 +24,12 @@ At any time you only have to focus on a part of any segment, evaluate and correc
 
 In other words, it's mainly reusing the old working recipes, but tuned to a software project where human(s) and AI(s) work together, allowing the human to maintain proper steering and high velocity.
 
-## How the telescopic documentation system
+How the telescopic documentation system works
+---------------------------------------------
 
 We implement a practical solution with a chain of documents from earlier / upstream / concise / high level to later / downstream / detailed / low level.
 
-The "fan-out" here means that because each document is minimal it is easy and quick to review or even read in depth, yet it is the solid foundation the
+Because each document is minimal, it is easy and quick to review or even read in depth, yet it is the solid foundation on which all downstream documents rest.
 
 Each document is minimal in the sense that it covers what is described here but no more: any more detail appears only in the next document. At the end, the code is the last ground truth (since it is what actually runs in the end).
 
@@ -123,12 +128,14 @@ Notice that code-local documents should exist in the source tree:
 
 Care must be taken to have abundance of cross-references for reviewers convenience (clarity, navigation).
 
-## Observations
+Observations
+------------
 
 - The documents certainly are interdependant and overlap in their content, if only because each document goes into more details about what the previous explained.
 - Yet the relation is asymmetrical: from any document, it and all later documents could be completely cut off and the remaining (earlier) parts would make yet incomplete but standalone and consistent document set, allowing to rebuild all later documemnts. A typical scenario is eliminating technical debt: a prototype was coded in a langage and as the project evolves a complete rewrite is due.
 
-## FAQ
+FAQ
+---
 
 ### That makes many documents? Is this overkill, bureaucracy?
 
@@ -138,7 +145,7 @@ Not at all: having more documents does not add more work to you, actually reduce
 
 Different persons or the same person, both are fine.
 
-The fan-out aspects guarantees that having things clear at any (earlier, upstream, shorter) stage ensures consistency with later (downstream, more detailed) stage.
+The telescopic structure guarantees that having things clear at any (earlier, upstream, shorter) stage ensures consistency with later (downstream, more detailed) stages.
 
 ### Where to put all this?
 
