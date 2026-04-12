@@ -1,9 +1,16 @@
 Telescopic engineering for viable and durable projects in the AI era
 ====================================================================
 
+The situation and issue
+-----------------------
+
 - Projects too big to **fit at once in a person's mind** need **support documents** or they drift and fail.
-- Generative AIs and vibe-coding make it easy to get lots of text and code, **shifting the cost from creating** them to **ensuring they fit the intended purpose**.
+
+- Generative AIs and vibe-coding make it easy to get lots of text and code but: **shifting the cost from creating** them to **ensuring they fit the intended purpose**.
 - Without **proper steering**, code generation yields hallucinations, drift and overall wasted time.
+- Just riding on the AI acceleration breaks the mental landscape from ideas to a sustainable project.
+
+Yet, adjusting well-known old good practice may certainly restore some sanity while still allowing some acceleration made possible by AI.
 
 Telescopic engineering sets your project on tracks
 --------------------------------------------------

@@ -1,9 +1,9 @@
 Telescopic Engineering
 ======================
 
-A structured documentation method to solve two issues with AI assistance: they drift/wander/hallucinate, they shift the cost from creating to reviewing.
+A structured documentation method to solve three issues with AI assistance: they drift/wander/hallucinate, they shift some costs from creating to reviewing, they break the mental landscape from ideas to a sustainable project.
 
-Telescopic engineering brings your project on track and minimizes the reviewing cost.
+Telescopic engineering offers a structured solution to keep your project on track, minimizes the reviewing cost, restore some sanity and manageable control while still allowing some acceleration made possible by AI.
 
 What's this?
 ------------
