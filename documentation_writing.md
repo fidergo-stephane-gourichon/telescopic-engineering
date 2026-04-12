@@ -1,4 +1,4 @@
-# The structuring fan-out documentation system for viable and durable projects
+# The telescopic documentation system for viable and durable projects
 
 ## Why this?
 
@@ -6,14 +6,21 @@ Any project (from the biggest to even very small non-trivial) need some document
 
 This document elaborates a set of documenation-focused guidelines for project success.
 
-## Issues and solutions
+## The issue
 
-- In this era of generative AIs, having long documents is cheap. Ensuring they are correct is costly.
-- In this era of vibe-coding, it is easy to get code, but without proper steering, code generation yields hallucinations, feature drift and overall wasted time.
+- Projects too big to fit at once in a man's mind need some support document or they drift and fail.
+- The issue is even more pressing now that generative AIs and vibe-coding make it easy to get lots of text and code, shifting the cost from creating them to ensuring they fit the intended purpose.
+- Without proper steering, code generation yields hallucinations, feature drift and overall wasted time.
 
-We solve these here and now.
+## The solution in short
 
-## The structuring fan-out documentation system
+We expose here the telescopic documentation system that helps structure a project with a "short side" and a "long side" with steps in between that are maintained consistent with one another.
+
+At any time you only have to focus on a part of any segment, evaluate and correct it, and the overall structure will help other actors (humans or AI) to propagate whatever you express into full-fledged working implementation.
+
+In other words, it's mainly reusing the old working recipes, but tuned to a software project where human(s) and AI(s) work together, allowing the human to maintain proper steering and high velocity.
+
+## How the telescopic documentation system
 
 We implement a practical solution with a chain of documents from earlier / upstream / concise / high level to later / downstream / detailed / low level.
 
@@ -50,9 +57,9 @@ The README.md may have some sections in another order, even missing entirely if 
 
 Whatever serves the purpose is welcome e.g. an overall diagram given the constraints of conciseness.
 
-### Feature overview
+### Capability specification
 
-Feature overview provides a *high-level description* of *all* the features.
+Capability specification provides a *high-level description* of *all* the capabilities of the system.
 
 No detail about how the user will interact or how features are implemented.
 
@@ -67,7 +74,7 @@ Anything that's part of the contract with the outside world belongs here, even d
 - configuration files (the specification may leave options open like "whatever is natural with the chosen downstream implementation")
 - network protocol (typical example where bits and bytes are fundamental here)
 
-It's okay here to mention common data structures or language constructs if that serves clarity and conciseness.
+It's okay here to mention common data structures or language constructs (like a tree, queue, dictionary) if that serves clarity and conciseness, yet reference to a specific technology or brand is forbidden.
 
 Anything that's internal, not observable from the outside, does not belong to this step. Example: no mention of internal architecture, or implementation language.
 
@@ -148,12 +155,12 @@ They should be handled at the appropriate stages.
 Take security for example:
 
 - README.md: one sentence about the security stance, thread model and how it's handled
-- feature overview: details the security approach, the *what* not the *how*
+- capability specification: details the security approach, the *what* not the *how*
 - functional specification: details the specifics about security, details, including acceptance tests like "check that port 443 responds with a valid certificate", "check that feeding a valid signed certificate for another domain yields the server rejecting the connection".
 - etc, apply the rules of each stage to this specific aspect.
 
 For example, at each stage have a subsection about each relevent concerns.
 
-Decision records are historical artifacts which goal is to record what was evaluated, the reasons, the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the feature overview stage, at the functional specification stage, at the architecture stage, at the implementation stage.
+Decision records are historical artifacts which goal is to record what was evaluated, the reasons, the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the capability specification stage, at the functional specification stage, at the architecture stage, at the implementation stage.
 
 Changelogs are a different beast, they document product history, they are off this track.
