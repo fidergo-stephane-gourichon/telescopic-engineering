@@ -4,7 +4,7 @@ Telescopic engineering for viable and durable projects in the AI era
 The situation and issue
 -----------------------
 
-- Generative AIs and vibe-coding make it easy to get lots of text and code but: **shifting the cost from creating** them to **ensuring they fit the intended purpose**.
+- Generative AIs and vibe-coding make it easy to get lots of text and code. The cost shifts from creating them to ensuring they fit the intended purpose.
 
 - Without **proper steering**, code generation yields hallucinations, drift and overall wasted time.
 
