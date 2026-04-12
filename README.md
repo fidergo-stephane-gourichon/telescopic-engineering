@@ -37,19 +37,11 @@ This methodology exists to enforce a disciplined separation of concerns across a
 How it works
 ------------
 
-The system is a **directed chain of refinement**:
+The system is a directed chain of refinement:
 
-    README.md
-       ↓
-    Capability Specification
-       ↓
-    Functional Specification
-       ↓
-    Architecture
-       ↓
-    Implementation Documentation
-       ↓
-    Code
+``` default
+README.md -> capability spec -> functional spec -> architecture -> implementation -> code
+```
 
 Each stage:
 
@@ -73,27 +65,6 @@ What problem it solves
 - Makes AI-generated code auditable against explicit intent layers.
 - Reduces cognitive load by isolating concerns by abstraction level.
 - Enables partial rewrites (code, architecture, or full system) without losing correctness guarantees.
-
-Architecture overview
----------------------
-
-    [Intent Layer]
-        README.md
-            ↓
-    [Capability Layer]
-        What must be possible
-            ↓
-    [Functional Layer]
-        External behavior definition
-            ↓
-    [Architecture Layer]
-        System decomposition strategy
-            ↓
-    [Implementation Layer]
-        Technology mapping rules
-            ↓
-    [Execution Layer]
-        Source code (runtime truth)
 
 Scope rules
 -----------
