@@ -96,11 +96,15 @@ Examples:
 - breaking down a problem into sub-problems
 - introducing algorithms and explanations on how to use them, that will solve the underlying issue
 
+In short: the architecture document describes the solution strategy.
+
 In very simple projects, it may not make sense to have an architecture document.
 
 ### Implementation documentation
 
-Is is a project-wide document. It introduces and justifies impactful project-wide choices: language, dependencies, overall data structures that are consequences of the language choices.
+The implementation document describes the technology stack and how the solution strategy maps to it.
+
+It is a project-wide document. It introduces and justifies impactful project-wide choices: language, dependencies, overall data structures that are consequences of the language choices.
 
 Any element, decision etc, that makes sense only once these are chosen but before writing code belongs here.
 
