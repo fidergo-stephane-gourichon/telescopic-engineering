@@ -74,37 +74,6 @@ What problem it solves
 - Reduces cognitive load by isolating concerns by abstraction level.
 - Enables partial rewrites (code, architecture, or full system) without losing correctness guarantees.
 
-Quick start
------------
-
-### 1. Create the structure
-
-``` shell
-$ mkdir -p doc/10_capability_specification \
-           doc/20_functional_specification \
-           doc/30_architecture \
-           doc/40_implementation \
-           src
-```
-
-### 2. Initialize minimal chain
-
-``` shell
-$ echo "Project intent goes here." > README.md
-$ echo "Capability spec placeholder." > doc/10_capability_specification/spec.md
-$ echo "Functional spec placeholder." > doc/20_functional_specification/spec.md
-$ echo "Architecture placeholder." > doc/30_architecture/spec.md
-$ echo "Implementation placeholder." > doc/40_implementation/spec.md
-```
-
-### 3. Enforce consistency loop
-
-At each change:
-
-- update the highest relevant upstream document first,
-- propagate changes downstream,
-- verify that no downstream artifact deviates from its upstream
-
 Architecture overview
 ---------------------
 
