@@ -1,17 +1,14 @@
-The telescopic documentation system for viable and durable projects
-===================================================================
+Telescopic engineering for viable and durable projects in the AI era
+====================================================================
 
-Why this?
----------
+- Projects too big to **fit at once in a person's mind** need **support documents** or they drift and fail.
+- Generative AIs and vibe-coding make it easy to get lots of text and code, **shifting the cost from creating** them to **ensuring they fit the intended purpose**.
+- Without **proper steering**, code generation yields hallucinations, drift and overall wasted time.
 
-- Projects too big to fit at once in a person's mind need support documents or they drift and fail.
-- The issue is even more pressing now that generative AIs and vibe-coding make it easy to get lots of text and code, shifting the cost from creating them to ensuring they fit the intended purpose.
-- Without proper steering, code generation yields hallucinations, feature drift and overall wasted time.
+Telescopic engineering sets your project on tracks
+--------------------------------------------------
 
-The solution in short
----------------------
-
-The telescopic documentation system structures a project as a chain of stages, from a narrow upstream end (the README) to a wide downstream end (the code), with stages in between that are maintained consistent with one another.
+Telescopic engineering **structures** a project as a **chain of stages**, from a narrow upstream end (the `README.md`) to a wide downstream end (the code), with stages in between that are maintained consistent with one another.
 
 At any time you only have to focus on part of any stage, evaluate and correct it, and the overall structure will help other actors (humans or AI) to propagate whatever you express into full-fledged working implementation.
 
@@ -19,8 +16,8 @@ A key benefit: because upstream documents are self-contained, any downstream sta
 
 In other words, it's mainly reusing the old working recipes, but tuned to a software project where human(s) and AI(s) work together, allowing the human to maintain proper steering and high velocity.
 
-How the telescopic documentation system works
----------------------------------------------
+How telescopic engineering works
+--------------------------------
 
 The system is a chain of stages, from upstream (concise, high-level) to downstream (detailed, low-level).
 
@@ -252,4 +249,4 @@ Yes. The full five-stage chain is the general case, not a minimum requirement. T
 
 **Start minimal, split when needed.** Begin with just README + one specification document + code. As the project grows, split the single spec into capability and functional when it starts serving two distinct purposes, then split further when architecture decisions become non-trivial. The trigger for splitting: a single document starts addressing two clearly different audiences or two different levels of abstraction.
 
-The minimum viable set is: README (what this is) + a specification (what it does and how) + code. Below this, the project has no documentation at all, which is the problem the telescopic system exists to solve.
+The minimum viable set is: README (what this is) + a specification (what it does and how) + code.
