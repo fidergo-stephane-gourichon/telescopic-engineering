@@ -1,5 +1,5 @@
-Telescopic Engineering
-======================
+Telescopic Engineering: restoring project viability in the AI era
+=================================================================
 
 A structured documentation method to solve several issues with AI assistance: they drift/wander/hallucinate, they shift some costs from creating to reviewing, they break the traditional effort loop and workflow from ideas to a sustainable project leading to various negative consequences.
 

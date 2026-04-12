@@ -1,5 +1,5 @@
-Telescopic engineering for viable and durable projects in the AI era
-====================================================================
+Telescopic engineering in details
+=================================
 
 What AI broke
 -------------
