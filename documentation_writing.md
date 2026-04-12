@@ -1,27 +1,40 @@
-# Documentation for viable and durable projects
+# The structuring fan-out documentation system for viable and durable projects
 
 ## Why this?
 
-Any project (from the biggest to even very small, beyond, say, 100 lines of code) need some documents to keep things on track. Without them, everything wanders, with them things converge much more easily.
+Any project (from the biggest to even very small non-trivial) need some documents to keep things on track. Without them, everything wanders, with them things converge much more easily.
 
 This document elaborates a set of documenation-focused guidelines for project success.
 
+## Issues and solutions
+
+- In this era of generative AIs, having long documents is cheap. Ensuring they are correct is costly.
+- In this era of vibe-coding, it is easy to get code, but without proper steering, code generation yields hallucinations, feature drift and overall wasted time.
+
+We solve these here and now.
+
 ## The structuring fan-out documentation system
 
-Below is an archetype of the documents that together serve the purpose, from the most high-level concise to the detailed.
+We implement a practical solution with a chain of documents from earlier / upstream / concise / high level to later / downstream / detailed / low level.
+
+The "fan-out" here means that because each document is minimal it is easy and quick to review or even read in depth, yet it is the solid foundation the
 
 Each document is minimal in the sense that it covers what is described here but no more: any more detail appears only in the next document. At the end, the code is the last ground truth (since it is what actually runs in the end).
 
+Yet all documents are authoritative: later documents make explicit some decisions, provide more details yet must not deviate from what is stated in earlier documents.
+
+As a consequence, the introduction part of any of these document is extremely short: where its traditional content would just look like an upstream document, it mostly is an introduction sentence and a link to that.
+
+Below is an archetype of the documents that together serve the purpose, from the most high-level concise to the detailed.
 
 ### README.md
 
 README.md is the entry point for everyone and targets the random github visitor.
 
-README.md must pitch the project:
+README.md must pitch the project then provide minimal entry points to any area where the visitor wants to know more or experiment.
 
 - all section very concise (few sentences)
 - first a "what's this?" section about what the project is (one sentence, maybe two or three)
-- then in a project-dependent order chosen to maximize clarity
 - each section may have links to more details
 
 Possible sections:
@@ -33,42 +46,114 @@ Possible sections:
 - dependencies,
 - "more" with an ordered list of other documentations in the project (including all links that were in previous sections)
 
+The README.md may have some sections in another order, even missing entirely if that serves clarity.
+
 Whatever serves the purpose is welcome e.g. an overall diagram given the constraints of conciseness.
 
-### Product requirements
+### Feature overview
 
-Product requirements provides a high-level description of all the features.
+Feature overview provides a *high-level description* of *all* the features.
 
 No detail about how the user will interact or how features are implemented.
+
+This part is very important as it details the *properties* that are needed "a user must be able to..." but not the *how* "a window with title FOO, content BAR and ok/cancel buttons".
 
 ### Functional specification
 
 Functional specification provides a comprehensive description of what the product does, every feature in detail, how the user can interact with it, how it interacts with its surroundings.
 
-That may include details about anything that's part of the contract with the outside world, even down to the bits and byte
+Anything that's part of the contract with the outside world belongs here, even down to the bits and byte if important
 
-- common data structures or language constructs
-- network protocol
+- configuration files (the specification may leave options open like "whatever is natural with the chosen downstream implementation")
+- network protocol (typical example where bits and bytes are fundamental here)
 
-Yet no mention of internal architecture, implementation language or whatever.
+It's okay here to mention common data structures or language constructs if that serves clarity and conciseness.
 
-External tests are welcome and considered a machine-readable, machine-verifiable part of the functional specifications.
+Anything that's internal, not observable from the outside, does not belong to this step. Example: no mention of internal architecture, or implementation language.
+
+Acceptance tests belong here: they are a machine-readable, machine-verifiable part of the functional specification. They ideally live in the same repository, to ensure consistency.
 
 ### Architecture document
 
-This document drills down to describing relevant architectural details that will make up a working solution. If it at all makes sense to not mention any specific language then so be it.
+This document drills down to describing relevant architectural details that will make up a working solution.
+
+Whatever is needed to structure a working solution irrespective of a specific implementation language belongs to the architecture document.
+
+Examples:
+
+- breaking down a problem into sub-problems
+- introducing algorithms and explanations on how to use them, that will solve the underlying issue
+
+In very simple projects, it may not make sense to have an architecture document.
 
 ### Implementation documentation
 
-Here all technical decisions and language-dependant details are welcome. It's still somehow more "external" than the code itself.
+Is is a project-wide document. It introduces and justifies impactful project-wide choices: language, dependencies, overall data structures that are consequences of the language choices.
 
-Unit tests are welcome and are considered a machine-readable, machine-verifiable part of the implementation documentation.
+Any element, decision etc, that makes sense only once these are chosen but before writing code belongs here.
+
+Unit tests belong here and are considered a machine-readable, machine-verifiable part of the implementation documentation.
+
+Notice the closer proximity between "implementation documentation" and "source code" yet these are still distinct.
+
+For example: once Python and library foo are chosen as for implementation, then a specific way of writing software naturally derives, with specific interfaces, classes and still is not the code.
+
+Throwing away part or even all of the implementation (code), e.g. because it grew up is more complicated than needed, then rewriting it based on the same implementation documentation is an option.
 
 ### Actual code
 
-The last "document" is the actual code (generally split over a number of folders and many source files).
+The last "document" is the actual code.
+
+It makes sense to separate code from "implementation documentation"
+
+Except for very small projects it lives in its own source tree and is generally split over a number of folders and many source files.
+
+Notice that code-local documents should exist in the source tree:
+
+- per-directory `README.md`, introduce and justify choices specific to the subsytem in this directory
+- in some specific cases, extra documents, either with the same name as a specific source code file, but with `.md` extension, focusing on a specific aspects
+- structured code comments that allow automatic extraction into documentation
+
+Care must be taken to have abundance of cross-references for reviewers convenience (clarity, navigation).
 
 ## Observations
 
 - The documents certainly are interdependant and overlap in their content, if only because each document goes into more details about what the previous explained.
 - Yet the relation is asymmetrical: from any document, it and all later documents could be completely cut off and the remaining (earlier) parts would make yet incomplete but standalone and consistent document set, allowing to rebuild all later documemnts. A typical scenario is eliminating technical debt: a prototype was coded in a langage and as the project evolves a complete rewrite is due.
+
+## FAQ
+
+### That makes many documents? Is this overkill, bureaucracy?
+
+Not at all: having more documents does not add more work to you, actually reduces it. It means that from one detail stage to the next the gap is not so big. The first documents are very short. Each is not that longer than the previous.
+
+### Who reads all those documents?
+
+Different persons or the same person, both are fine.
+
+The fan-out aspects guarantees that having things clear at any (earlier, upstream, shorter) stage ensures consistency with later (downstream, more detailed) stage.
+
+### Where to put all this?
+
+If at all possible (and obviously for simple projects) everything will live in the same repository as the code. Rationale: they evolve with it. Same repo is a simple solution.
+
+Notice that if the functional specification is not in the same repository as the code, then the acceptance tests are store with the functional specification, not with the code. In other words, position in the chain, not file style or tools, determine what is stored with what.
+
+### What about cross-cutting concerns?
+
+Example: security model, operational runbook
+
+They should be handled at the appropriate stages.
+
+Take security for example:
+
+- README.md: one sentence about the security stance, thread model and how it's handled
+- feature overview: details the security approach, the *what* not the *how*
+- functional specification: details the specifics about security, details, including acceptance tests like "check that port 443 responds with a valid certificate", "check that feeding a valid signed certificate for another domain yields the server rejecting the connection".
+- etc, apply the rules of each stage to this specific aspect.
+
+For example, at each stage have a subsection about each relevent concerns.
+
+Decision records are historical artifacts which goal is to record what was evaluated, the reasons, the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the feature overview stage, at the functional specification stage, at the architecture stage, at the implementation stage.
+
+Changelogs are a different beast, they document product history, they are off this track.
