@@ -50,11 +50,6 @@ Each stage:
 - must remain consistent with upstream definitions,
 - can be discarded and rebuilt while upstream stages retain their value.
 
-Status
-------
-
-Experimental methodology. Stable concept, evolving best practices.
-
 More
 ----
 
