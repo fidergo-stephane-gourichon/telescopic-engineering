@@ -56,7 +56,7 @@ Each stage:
 - is minimal and focused,
 - expands only what its level requires,
 - must remain consistent with upstream definitions,
-- allows flexibility to discard it pivot while keeping the benefit of upstream stages.
+- can be discarded and rebuilt while upstream stages retain their value.
 
 Key properties
 --------------
