@@ -176,8 +176,10 @@ Take security for example:
 - functional specification: details the specifics about security, details, including acceptance tests like "check that port 443 responds with a valid certificate", "check that feeding a valid signed certificate for another domain yields the server rejecting the connection".
 - etc, apply the rules of each stage to this specific aspect.
 
-For example, at each stage have a subsection about each relevent concerns.
+For example, at each stage have a subsection about each relevant concern. This only adds volume when the project actually has that concern -- a project with no security requirements gets no security subsections.
 
-Decision records are historical artifacts which goal is to record what was evaluated, the reasons, the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the capability specification stage, at the functional specification stage, at the architecture stage, at the implementation stage.
+When a cross-cutting concern grows large enough that its subsections dominate the stage documents, project staff may decide to give it its own parallel document chain at the relevant stages (e.g. a dedicated security capability specification, security functional specification, etc.). This is a project-level decision, not a rule of this system.
+
+Decision records are historical artifacts whose goal is to record what was evaluated, the reasons, and the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the capability specification stage, at the functional specification stage, at the architecture stage, at the implementation stage. They live in a `decisions/` directory co-located with the stage they affect.
 
 Changelogs are a different beast, they document product history, they are off this track.
