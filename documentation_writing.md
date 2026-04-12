@@ -27,7 +27,7 @@ What if adjusting well-known old good practice in a new specific combination can
 Telescopic engineering sets your project on track
 -------------------------------------------------
 
-Telescopic engineering **structures** a project as a **chain of stages** with **progressively detailed documents**, from a narrow upstream end (the `README.md`) to a wide downstream end (the code), with stages in between that are maintained consistent with one another.
+Telescopic engineering structures a project as a chain of stages with **progressively detailed documents**, from a narrow upstream end (the `README.md`) to a wide downstream end (the code), with stages in between that are maintained consistent with one another.
 
 At any time you only have to focus on part of any stage, evaluate and correct it, and the overall structure will help other actors (humans or AI) to propagate whatever you express into full-fledged working implementation.
 
