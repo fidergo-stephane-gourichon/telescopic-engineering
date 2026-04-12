@@ -53,4 +53,4 @@ Each stage:
 Name origin
 -----------
 
-“Telescopic” refers to the idea of nested structures that extend outward in controlled stages, where each segment reveals more detail without altering the alignment of the whole.
+Like a pocket telescope extends in nested segments, the method extends a project as a chain of documents, each segment revealing more detail without disturbing the alignment of the whole.
