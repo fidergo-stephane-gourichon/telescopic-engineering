@@ -4,14 +4,7 @@ The telescopic documentation system for viable and durable projects
 Why this?
 ---------
 
-Any project (from the biggest to even very small non-trivial) need some documents to keep things on track. Without them, everything wanders, with them things converge much more easily.
-
-This document elaborates a set of documenation-focused guidelines for project success.
-
-The issue
----------
-
-- Projects too big to fit at once in a man's mind need some support document or they drift and fail.
+- Projects too big to fit at once in a person's mind need some support documents or they drift and fail.
 - The issue is even more pressing now that generative AIs and vibe-coding make it easy to get lots of text and code, shifting the cost from creating them to ensuring they fit the intended purpose.
 - Without proper steering, code generation yields hallucinations, feature drift and overall wasted time.
 
