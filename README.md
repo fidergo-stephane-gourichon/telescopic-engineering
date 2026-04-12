@@ -50,15 +50,6 @@ Each stage:
 - must remain consistent with upstream definitions,
 - can be discarded and rebuilt while upstream stages retain their value.
 
-More
-----
-
-1.  `doc/10_capability_specification/` — defines system capabilities (what must be possible)
-2.  `doc/20_functional_specification/` — defines external behavior (what the system does)
-3.  `doc/30_architecture/` — defines structural decomposition strategy
-4.  `doc/40_implementation/` — defines technology mapping rules
-5.  `src/` — executable system (ground truth)
-
 Name origin
 -----------
 
