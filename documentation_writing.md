@@ -161,7 +161,25 @@ The telescopic structure guarantees that having things clear at any (earlier, up
 
 If at all possible (and obviously for simple projects) everything will live in the same repository as the code. Rationale: they evolve with it. Same repo is a simple solution.
 
-Notice that if the functional specification is not in the same repository as the code, then the acceptance tests are store with the functional specification, not with the code. In other words, position in the chain, not file style or tools, determine what is stored with what.
+A suggested layout:
+
+``` default
+README.md
+doc/
+  10_capability_specification/
+  20_functional_specification/
+  30_architecture/
+  40_implementation/
+src/
+```
+
+The numeric prefixes enforce sort order in directory listings so the chain reads top-to-bottom. The gaps (10, 20, 30, 40) leave room for inserting a stage without renumbering. Each stage is a directory (not a file) from the start, so companion artifacts (acceptance tests, decision records) have a natural home without renaming.
+
+README.md lives at the repository root (stage 0, implicitly) since that is where repository visitors expect it. Code lives outside `doc/` in its own tree.
+
+Each directory contains at least a main document. The naming convention for the main document is a project-level decision (e.g. always `spec.md`, or matching the directory name).
+
+Notice that if the functional specification is not in the same repository as the code, then the acceptance tests are stored with the functional specification, not with the code. In other words, position in the chain, not file style or tools, determines what is stored with what.
 
 ### What about cross-cutting concerns?
 
