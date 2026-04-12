@@ -8,7 +8,7 @@ The situation and issue
 
 - Without **proper steering**, code generation yields hallucinations, drift and overall wasted time.
 
-- Just riding on the AI acceleration breaks break the traditional effort loop and workflow from ideas to a sustainable project leading to various negative consequences (rythm and attention disruption, burnout, loss of control).
+- Just riding on the AI acceleration breaks the traditional effort loop and workflow from ideas to a sustainable project, leading to various negative consequences (rhythm and attention disruption, burnout, loss of control).
 
 Adapt proven approaches to the new context
 ------------------------------------------
