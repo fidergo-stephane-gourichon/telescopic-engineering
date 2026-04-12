@@ -63,7 +63,7 @@ Key properties
 
 - **Upstream stability**: intent is captured early and remains constant.
 - **Localized reasoning**: each document is small enough to audit independently.
-- **Bidirectional correction**: inconsistencies can be resolved either upward or downward depending on evidence.
+- **Upstream authority**: when downstream drifts from upstream, downstream is updated to match. The reverse happens only when evidence reveals an actual error in the upstream document.
 - **AI-friendly structure**: each stage is a bounded context for generation and verification.
 
 What problem it solves
