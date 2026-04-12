@@ -1,8 +1,8 @@
 Telescopic engineering for viable and durable projects in the AI era
 ====================================================================
 
-The situation and issue
------------------------
+What AI broke
+-------------
 
 - Generative AIs and vibe-coding make it easy to get lots of text and code. The cost shifts from creating them to ensuring they fit the intended purpose.
 
