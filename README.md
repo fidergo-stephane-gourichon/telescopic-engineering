@@ -1,7 +1,7 @@
 Telescopic engineering: restoring project viability in the AI era
 =================================================================
 
-Projects built with AI outrun the humans steering them. Telescopic engineering hands the steering back through a chain of progressively detailed documents, from README to code.
+Building with AI today feels like riding a motorbike hands-off: fast, no control, predictable crash. Gradually, people lose track of how things work, then of what they do, then of where the project is going. Telescopic engineering puts the rider back in control through a chain of progressively detailed documents, from README to code.
 
 Why it exists
 -------------
