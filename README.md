@@ -1,27 +1,18 @@
 Telescopic engineering: restoring project viability in the AI era
 =================================================================
 
-- Building with AI today feels like riding a motorbike hands-off: fast, no control, predictable crash.
-- Gradually, people lose track of how things work, then of what they do, then of where the project is going.
-- Telescopic engineering puts the rider back in control through a chain of progressively detailed documents, from README to code.
+**Problem:** AI provides code fast, at a cost of grave loss of control.
 
-Why it exists
--------------
+**Solution:** restore control through a chain of progressively detailed documents, from README to code.
 
-AI makes code and text cheap. What gets lost is harder to replace:
+Semi-short pitch below, or go straight to [full details](20_detailed_description.md).
 
-- intent drifts from what the project should actually do
+Why telescopic engineering works
+--------------------------------
 
-- specifications silently diverge from each other and from the code
+Telescopic engineering puts AI to work where it helps (controlled expansion from short blurbs, consistency checks, propagation across documents) and puts humans back at the center: big picture, writing and proofreading short extracts, judgment calls.
 
-- the human in the loop loses grip on the big picture
-
-- the rhythm that kept the work sustainable breaks down, taking the person with it
-
-Why it works
-------------
-
-Telescopic engineering puts AI to work where it helps (consistency checks, propagation across documents) and keeps humans in charge of what only humans do well (big picture, writing and proofreading short extracts, judgment calls). See [[10_motivation.md]] for the full argument.
+See [motivation](10_motivation.md) for the full argument.
 
 What it is
 ----------
