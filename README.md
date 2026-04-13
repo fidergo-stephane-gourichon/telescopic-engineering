@@ -18,7 +18,10 @@ AI makes code and text cheap. What gets lost is harder to replace:
 
 - the rhythm that kept the work sustainable breaks down, taking the person with it
 
-Telescopic engineering puts AI to work where it helps (consistency checks, propagation across documents) and keeps humans in charge of what only humans do well (big picture, judgment calls). See [[10_motivation.md]] for the full argument.
+Why it works
+------------
+
+Telescopic engineering puts AI to work where it helps (consistency checks, propagation across documents) and keeps humans in charge of what only humans do well (big picture, writing and proofreading short extracts, judgment calls). See [[10_motivation.md]] for the full argument.
 
 What it is
 ----------
