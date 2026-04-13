@@ -1,56 +1,33 @@
-Telescopic Engineering: restoring project viability in the AI era
+Telescopic engineering: restoring project viability in the AI era
 =================================================================
 
-A structured documentation method to solve several issues with AI assistance: they drift/wander/hallucinate, they shift some costs from creating to reviewing, they break the traditional effort loop and workflow from ideas to a sustainable project leading to various negative consequences.
+Projects built with AI outrun the humans steering them. Telescopic engineering hands the steering back through a chain of progressively detailed documents, from README to code.
 
-Telescopic engineering offers a structured solution to keep your project on track, minimizes the reviewing cost, restore some sanity and manageable control while still allowing some acceleration made possible by AI.
+Why it exists
+-------------
 
-What's this?
-------------
+AI makes code and text cheap. What gets lost is harder to replace:
 
-This project defines a methodology for organizing software systems as a **stack of progressively detailed documents**, starting from a concise entry point (`README.md`) and ending in executable code.
+- intent drifts from what the project should actually do
 
-Each layer refines the previous one without altering its meaning. The result is a system where:
+- specifications silently diverge from each other and from the code
 
-- high-level intent remains stable,
-- mid-level design decisions stay explicit,
-- low-level implementation can be rewritten safely.
+- the human in the loop loses grip on the big picture
 
-Why this?
----------
+- the rhythm that kept the work sustainable breaks down, taking the person with it
 
-Modern AI-assisted development changes the bottleneck: generating code and text is cheap, but ensuring **consistency, correctness, and intent alignment** is not.
+Telescopic engineering puts AI to work where it helps (consistency checks, propagation across documents) and keeps humans in charge of what only humans do well (big picture, judgment calls). See [[10_motivation.md]] for the full argument.
 
-Without structure:
+What it is
+----------
 
-- generated code drifts from intent,
-- specifications silently diverge,
-- local edits break global assumptions,
-- rebuilding systems becomes fragile and expensive.
+A chain of stages, each a refinement of the previous one:
 
-This methodology exists to enforce a disciplined separation of concerns across abstraction levels so that:
+    README.md -> capability spec -> functional spec -> architecture -> implementation -> code
 
-- upstream intent acts as a stable source of truth,
-- downstream artifacts become replaceable derivations,
-- AI and humans can iterate safely without losing coherence.
-
-How it works
-------------
-
-The system is a directed chain of refinement:
-
-``` default
-README.md -> capability spec -> functional spec -> architecture -> implementation -> code
-```
-
-Each stage:
-
-- is minimal and focused,
-- expands only what its level requires,
-- must remain consistent with upstream definitions,
-- can be discarded and rebuilt while upstream stages retain their value.
+Upstream stays stable; downstream can be discarded and rebuilt without losing the foundation. See [[20_how_it_works.md]] for the stage-by-stage breakdown, and [[30_faq.md]] for common questions.
 
 Name origin
 -----------
 
-Like a pocket telescope extends in nested segments, the method extends a project as a chain of documents, each segment revealing more detail without disturbing the alignment of the whole.
+Like a pocket telescope that extends in nested segments, the method extends a project as a chain of documents, each segment revealing more detail without disturbing the alignment of the whole.
