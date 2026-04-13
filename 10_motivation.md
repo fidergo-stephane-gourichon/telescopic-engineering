@@ -1,23 +1,25 @@
-The problem telescopic engineering solves
-=========================================
+Motivation: issues, approach and effect
+=======================================
 
 What AI broke
 -------------
 
-- Generative AIs and vibe-coding make it easy to get lots of text and code. The **cost shifts** from creating them to ensuring they fit the intended purpose.
+Generative AIs and vibe-coding make it easy to get lots of text and code, but has drawbacks:
 
-- Without **proper steering**, code generation yields hallucinations, drift and overall wasted time.
+- Gradual yet unbounded loss of control and project direction
 
-- Just riding on the **AI acceleration breaks** the traditional effort loop and workflow from ideas to a sustainable project, leading to various negative consequences (rhythm and attention disruption, burnout, loss of control).
+- The **cost shifts** from writing artifacts to ensuring they fit the intended purpose.
 
-Adapt proven approaches to the new context
-------------------------------------------
+- **AI acceleration breaks** the traditional effort loop and workflow, leading to negative consequences (rhythm and attention disruption, burnout).
+
+Approach: adapt proven tools to the new context
+-----------------------------------------------
 
 - **Documentation is an external memory**, allowing humans to work on projects too big to fit at once in a person's mind.
 
 - Drift and disorder can be dealt with proper **structure and discipline**.
 
-- AI is good at some things (spotting and reporting inconsistencies in bigger contexts), while humans remain better at keeping in mind the big picture and controlling at some levels of details.
+- AI is good at some things (spotting and reporting inconsistencies in bigger contexts), while humans remain better at keeping in mind the big picture and reading and writing not too long sections at a time.
 
 Combining proven practices in a new way can:
 
