@@ -13,6 +13,9 @@ As a consequence, the introduction of any stage document is extremely short: whe
 
 Below is an archetype of the stages that together serve the purpose, from the most upstream to the most downstream.
 
+The stages
+----------
+
 ### README.md
 
 README.md is the entry point for everyone and targets the random visitor who lands on the repository. It is the only document in the chain with this audience -- all other documents are working documents, increasingly technical and maintainer-oriented as one moves downstream.

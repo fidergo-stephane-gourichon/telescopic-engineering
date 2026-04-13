@@ -30,7 +30,7 @@ A chain of stages, each a refinement of the previous one:
 
     README.md -> capability spec -> functional spec -> architecture -> implementation -> code
 
-Upstream stays stable; downstream can be discarded and rebuilt without losing the foundation. See [[20_how_it_works.md]] for the stage-by-stage breakdown, and [[30_faq.md]] for common questions.
+Upstream stays stable; downstream can be discarded and rebuilt without losing the foundation. See [[20_detailed_description.md]] for the stage-by-stage breakdown, and [[30_faq.md]] for common questions.
 
 Name origin
 -----------
