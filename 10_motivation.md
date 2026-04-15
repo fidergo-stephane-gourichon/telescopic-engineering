@@ -4,7 +4,7 @@ Motivation: issues, approach and effect
 What AI broke
 -------------
 
-Generative AIs and vibe-coding make it easy to get lots of text and code, but has drawbacks:
+Generative AIs and vibe-coding make it easy to get lots of text and code, but have drawbacks:
 
 - Gradual yet unbounded loss of control and project direction
 
