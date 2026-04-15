@@ -17,11 +17,19 @@ See [motivation](10_motivation.md) for the full argument.
 What it is
 ----------
 
-A chain of stages, each a refinement of the previous one:
+Telescopic engineering defines:
 
-    README.md -> capability spec -> functional spec -> architecture -> implementation -> code
+- a chain of stages, each a refinement of the previous one
 
-Upstream stays stable; downstream can be discarded and rebuilt without losing the foundation. See [[20_detailed_description.md]] for the stage-by-stage breakdown, and [[30_faq.md]] for common questions.
+```
+README.md -> capability spec -> functional spec -> architecture -> implementation -> code
+```
+
+- and some rules about where AI is used to perform steps that are traditionally costly for humans (e.g. controlling consistency, carefully propagating changes) and where AI stops to let humans do what they are good at.
+
+When each party does what they are best at, you get the smoothest experience and achieve your goals.
+
+See [full details](20_detailed_description.md) for the stage-by-stage breakdown, and the [FAQ](30_faq.md) for common questions.
 
 Name origin
 -----------
