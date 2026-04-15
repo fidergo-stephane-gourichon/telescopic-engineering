@@ -23,9 +23,9 @@ Approach: adapt proven tools to the new context
 
 Combining proven practices in a new way can:
 
-- put **AI** to work where it helps (consistency checks, propagation across documents),
+- put **AI** to work where it helps (controlled expansion from short blurbs, consistency checks, propagation across documents),
 
-- keep **humans** in charge of what they do well (big picture, judgment calls),
+- keep **humans** in charge of what they do well (big picture, writing and proofreading short extracts, judgment calls),
 
 - restore a workable equilibrium instead of forcing a choice between full control and full surrender,
 
