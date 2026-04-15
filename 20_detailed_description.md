@@ -9,7 +9,7 @@ Each document covers only what its stage describes and no more: any further deta
 
 Yet all documents are authoritative: downstream documents make some decisions explicit and provide more details, yet must not deviate from what is stated in upstream documents.
 
-As a consequence, the introduction of any stage document is extremely short: where its traditional content would just look like the upstream document, it is mostly an introduction sentence and a link to that.
+As a consequence, the introduction of any stage document is extremely short: rather than repeating the upstream content, it is just one introductory sentence and a link upstream.
 
 Below is an archetype of the stages that together serve the purpose, from the most upstream to the most downstream.
 
