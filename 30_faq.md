@@ -82,3 +82,9 @@ Yes. The full five-stage chain is the general case, not a minimum requirement. T
 **Start minimal, split when needed.** Begin with just README + one specification document + code. As the project grows, split the single spec into capability and functional when it starts serving two distinct purposes, then split further when architecture decisions become non-trivial. The trigger for splitting: a single document starts addressing two clearly different audiences or two different levels of abstraction.
 
 The minimum viable set is: README (what this is) + a specification (what it does and how) + code.
+
+### Any other resources or similar endeavor?
+
+Yes.
+
+[Harness engineering: Structured workflows for AI-assisted development | Red Hat Developer](https://developers.redhat.com/articles/2026/04/07/harness-engineering-structured-workflows-ai-assisted-development#why_this_works)
