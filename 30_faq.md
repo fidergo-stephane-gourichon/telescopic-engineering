@@ -87,4 +87,9 @@ The minimum viable set is: README (what this is) + a specification (what it does
 
 Yes.
 
-[Harness engineering: Structured workflows for AI-assisted development | Red Hat Developer](https://developers.redhat.com/articles/2026/04/07/harness-engineering-structured-workflows-ai-assisted-development#why_this_works)
+- [Harness engineering: leveraging Codex in an agent-first world \| OpenAI](https://openai.com/index/harness-engineering/)
+- [Harness engineering for coding agent users](https://martinfowler.com/articles/harness-engineering.html)
+- [Harness engineering: Structured workflows for AI-assisted development \| Red Hat Developer](https://developers.redhat.com/articles/2026/04/07/harness-engineering-structured-workflows-ai-assisted-development#why_this_works)
+- [I had Claude read every harness engineering guide and build me one : r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s9jm0d/i_had_claude_read_every_harness_engineering_guide/)
+  - [celesteanders/harness: Harness engineering best practices](https://github.com/celesteanders/harness)
+  - [harness/docs/best-practices.md at main · celesteanders/harness](https://github.com/celesteanders/harness/blob/main/docs/best-practices.md)
