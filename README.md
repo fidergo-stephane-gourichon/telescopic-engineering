@@ -21,7 +21,7 @@ Telescopic engineering defines:
 
 - a chain of stages, each a refinement of the previous one
 
-```
+``` default
 README.md -> capability spec -> functional spec -> architecture -> implementation -> code
 ```
 
