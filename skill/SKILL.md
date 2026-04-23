@@ -35,7 +35,7 @@ Read these files before performing any analysis. They are the authoritative refe
 telescopic engineering method:
 
 -   `~/.claude/skills/telescopic/docs/20_detailed_description.md` — stage definitions and rules
--   `~/.claude/skills/telescopic/docs/30_faq.md` — FAQ including the recommended `doc/` layout
+-   `~/.claude/skills/telescopic/docs/30_faq.md` — FAQ including the recommended `doc-telescopic/` layout
 -   `~/.claude/skills/telescopic/docs/readme_writing.md` — catalog of README sections
 
 ## Step 3 — Full analysis
@@ -45,7 +45,7 @@ telescopic engineering method:
 List all documentation files at the project root and in subdirectories:
 
 -   `.md`, `.rst`, `.txt` files at the root level
--   Everything under `doc/`, `docs/`, `documentation/` (recursively)
+-   Everything under `doc-telescopic/`, `doc/`, `docs/`, `documentation/` (recursively)
 -   Per-directory `README.md` files inside source trees (`src/`, `lib/`, etc.)
 
 ### 3b — Classify
@@ -82,7 +82,7 @@ Flag each of the following, referencing specific files (and line numbers when re
 -   **Downstream deviation**: a downstream document contradicts a claim made in an upstream
     document.
 
--   **Layout issues**: no `README.md` at the repo root; stage docs not organized under `doc/`;
+-   **Layout issues**: no `README.md` at the repo root; stage docs not organized under `doc-telescopic/`;
     stage directories missing numeric prefixes that would enforce sort order (e.g. `10_`, `20_`).
 
 Severity tags:
@@ -102,7 +102,7 @@ Write `.telescopic/report.md` with:
     | File | Stage | Notes |
     |---|---|---|
     | README.md | README | |
-    | doc/10_capability_specification/spec.md | capability-spec | |
+    | doc-telescopic/10_capability_specification/spec.md | capability-spec | |
 
 2.  A **Issues found** list, each tagged with severity (`must fix` / `should fix` / `consider`).
 
@@ -129,9 +129,9 @@ with no significant scope violations? If yes, moving it is the right first step.
 Example:
 
 ```
-1. [must fix] Shorten intro of doc/20_functional_specification/spec.md to one sentence + link to capability spec
-2. [should fix] Rename doc/architecture/ → doc/30_architecture/ to add sort prefix
-3. [consider] Create doc/10_capability_specification/ with a skeleton spec.md
+1. [must fix] Shorten intro of doc-telescopic/20_functional_specification/spec.md to one sentence + link to capability spec
+2. [should fix] Rename doc-telescopic/architecture/ → doc-telescopic/30_architecture/ to add sort prefix
+3. [consider] Create doc-telescopic/10_capability_specification/ with a skeleton spec.md
 ```
 
 Ask the user which actions to approve. Once confirmed, write the approved actions as a numbered
