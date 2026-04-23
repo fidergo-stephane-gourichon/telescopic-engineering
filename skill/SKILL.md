@@ -1,6 +1,6 @@
 ---
 name: telescopic
-description: Survey a project's documentation, map it to telescoping-engineering stages, identify gaps and violations, and propose concrete improvements. Tracks progress in .telescope/ so work survives across sessions.
+description: Survey a project's documentation, map it to telescoping-engineering stages, identify gaps and violations, and propose concrete improvements. Tracks progress in .telescopic/ so work survives across sessions.
 argument-hint: "[path]"
 ---
 
@@ -8,7 +8,7 @@ argument-hint: "[path]"
 
 Apply the telescopic engineering method to a project's documentation. Surveys existing docs,
 maps them to stages, identifies gaps and rule violations, proposes ordered changes, and applies
-them one at a time with commits. Progress is stored in `.telescope/` so work survives across
+them one at a time with commits. Progress is stored in `.telescopic/` so work survives across
 sessions and conversations.
 
 ## Step 0 — Determine project root
@@ -18,7 +18,7 @@ Otherwise use the current working directory.
 
 ## Step 1 — Check for prior work
 
-Before any analysis, check whether `.telescope/todo.md` exists at the project root and contains
+Before any analysis, check whether `.telescopic/todo.md` exists at the project root and contains
 any items.
 
 -   If it exists and has content: display the items and ask the user: "There is pending work from
@@ -93,9 +93,9 @@ Severity tags:
 
 ### 3d — Write the report
 
-Create `.telescope/` at the project root if it does not exist.
+Create `.telescopic/` at the project root if it does not exist.
 
-Write `.telescope/report.md` with:
+Write `.telescopic/report.md` with:
 
 1.  A **Current state** table:
 
@@ -109,7 +109,7 @@ Write `.telescope/report.md` with:
 Then commit:
 
 ```
-git add .telescope/report.md
+git add .telescopic/report.md
 git commit -m "telescope: record analysis report"
 ```
 
@@ -128,22 +128,22 @@ Example:
 ```
 
 Ask the user which actions to approve. Once confirmed, write the approved actions as a numbered
-list in `.telescope/todo.md`, then commit:
+list in `.telescopic/todo.md`, then commit:
 
 ```
-git add .telescope/todo.md
+git add .telescopic/todo.md
 git commit -m "telescope: record approved action list"
 ```
 
 ## Step 5 — Apply actions
 
-Work through `.telescope/todo.md` from item 1 downward.
+Work through `.telescopic/todo.md` from item 1 downward.
 
 For each item:
 
 1.  Apply the change (rename, create file, move section, shorten intro, etc.).
 2.  Commit the change with a descriptive message (e.g. `Shorten functional spec intro to one sentence`).
-3.  Remove that item from `.telescope/todo.md`.
+3.  Remove that item from `.telescopic/todo.md`.
 4.  Commit the updated todo with:
     ```
     git commit -m "telescope: mark action done — [one-line description]"
@@ -154,7 +154,7 @@ them as one logical unit: reverting one without the other would leave the state 
 
 Ask the user before each action, or offer to apply all in sequence — follow the user's preference.
 
-When `.telescope/todo.md` becomes empty, report completion and confirm that all approved changes
+When `.telescopic/todo.md` becomes empty, report completion and confirm that all approved changes
 have been applied.
 
 ## Notes
