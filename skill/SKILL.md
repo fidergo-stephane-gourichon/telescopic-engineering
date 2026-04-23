@@ -98,6 +98,11 @@ Severity tags:
 
 Create `.telescopic/` at the project root if it does not exist.
 
+**Linking convention for all generated files** (report.md, todo.md, decisions.md): always link to
+the most precise location — prefer a section anchor over a bare file link whenever the target is a
+specific heading. Link text is a short human-readable label; URL uses the `../`-prefixed
+project-root-relative path with an `#anchor` suffix when applicable.
+
 Write `.telescopic/report.md` with:
 
 -   A **Current state** section grouping files by directory. Use judgment: files that naturally
@@ -121,10 +126,9 @@ Write `.telescopic/report.md` with:
 
 -   A **Issues found** bullet list — **never a numbered list** (numbers break whenever an item is
     inserted or deleted). Tag each item with severity (`must fix` / `should fix` / `consider`).
-    Reference each affected file with a markdown link using the same convention (project-root-relative
-    path as display text, `../`-prefixed as URL). When the issue concerns a specific section, append
-    a heading anchor to the URL and use a short descriptive label as display text (e.g.
-    `[func spec § Introduction](../doc-telescopic/20_functional_specification/spec.md#introduction)`).
+    Apply the linking convention above: use a section anchor whenever possible (e.g.
+    `[func spec § Introduction](../doc-telescopic/20_functional_specification/spec.md#introduction)`);
+    bare file link only when the issue spans the whole document.
 
 Then commit:
 
