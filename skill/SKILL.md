@@ -71,10 +71,13 @@ Flag each of the following, referencing specific files (and line numbers when re
     `architecture` and `implementation-doc` may be intentionally absent for small or trivial
     projects — flag as "may be intentionally absent" rather than "missing".
 
--   **Intro violations**: a stage document whose introduction is longer than one sentence, or that
-    repeats upstream content instead of linking to it. (Per the method: "the introduction of any
-    stage document is extremely short: rather than repeating the upstream content, it is just one
-    introductory sentence and a link upstream.")
+-   **Intro violations**: a stage document whose introduction repeats upstream content instead of
+    linking to it, or is long enough to obscure what stage this document belongs to. The goal is
+    clarity: the reader should immediately know where they are in the chain and where to go for
+    more context. A single short sentence with an upstream link is the ideal; a second sentence
+    that adds genuine navigation value (e.g. a downstream pointer) is acceptable and not a
+    violation. Flag as a violation only when the intro is so long it reads like a summary, or
+    when it restates content the upstream document already covers.
 
 -   **Scope violations**: content at the wrong stage level (e.g. implementation language named in
     a functional spec; UI layout details in a capability spec).
