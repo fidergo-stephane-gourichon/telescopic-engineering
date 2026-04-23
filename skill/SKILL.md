@@ -18,16 +18,32 @@ Otherwise use the current working directory.
 
 ## Step 1 — Check for prior work
 
-Before any analysis, check whether `.telescopic/todo.md` exists at the project root and contains
-any items.
+Check whether any files exist under `.telescopic/` at the project root. Any such file is a sign
+that prior analysis was done. If they exist, read them.
 
--   If it exists and has content: display the items and ask the user: "There is pending work from
-    a prior session. Resume from this list, or run a fresh analysis?"
+Then run this quick staleness hint:
 
-    -   If the user chooses **resume**: skip to **Step 4 — Apply actions**.
-    -   If the user chooses **fresh analysis**: proceed to Step 2.
+```bash
+find . -type f -newer .telescopic/report.md ! -path './.git/*' ! -path './.telescopic/*' | head -10
+```
 
--   If it does not exist or is empty: proceed to Step 2.
+Use the output as a hint, not a rule: if the files returned look like documentation (`.md`, `.rst`,
+`README`, etc.), staleness is likely. If they are unrelated build artifacts or source files, the
+prior analysis is probably still valid. When unsure, ask the user.
+
+Based on the prior files and the staleness hint:
+
+-   If the prior work appears **still useful** and `.telescopic/todo.md` has pending items: display
+    them and ask "Resume from this work list, or run a fresh analysis?"
+    -   If **resume**: skip to **Step 4 — Apply actions**.
+    -   If **fresh analysis**: proceed to Step 2.
+
+-   If the prior work appears **still useful** but no todo items remain: ask "Prior analysis exists.
+    Continue from it, or run a fresh analysis?"
+    -   If **continue**: skip to **Step 4 — Propose and approve** using report.md as the basis.
+    -   If **fresh analysis**: proceed to Step 2.
+
+-   If the prior work appears **stale or no prior work exists**: proceed to Step 2.
 
 ## Step 2 — Read the method reference
 
