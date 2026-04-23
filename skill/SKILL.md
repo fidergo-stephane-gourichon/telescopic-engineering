@@ -143,8 +143,13 @@ Example:
 3. [consider] Create doc-telescopic/10_capability_specification/ with a skeleton spec.md
 ```
 
-Ask the user which actions to approve. Once confirmed, write the approved actions as a numbered
-list in `.telescopic/todo.md`, then commit:
+Ask the user which actions to approve. If the user declines or disagrees with any proposed action,
+record it in `.telescopic/decisions.md` with a one-line summary of what was declined and, if the
+user gave a reason, the reason. Commit this file and tell the user its path so they can edit or
+remove the entry if they change their mind later.
+
+Once confirmed, write the approved actions as a numbered list in `.telescopic/todo.md`, then
+commit:
 
 ```
 git add .telescopic/todo.md
