@@ -100,7 +100,7 @@ Create `.telescopic/` at the project root if it does not exist.
 
 Write `.telescopic/report.md` with:
 
-1.  A **Current state** table. Use markdown links for every file path. The link text is the
+-   A **Current state** table. Use markdown links for every file path. The link text is the
     project-root-relative path (so it reads like a wikilink when rendered); the URL is the same
     path prefixed with `../` (since `.telescopic/` is one level below the project root):
 
@@ -109,7 +109,8 @@ Write `.telescopic/report.md` with:
     | [README.md](../README.md) | README | |
     | [doc-telescopic/10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec | |
 
-2.  A **Issues found** list, each tagged with severity (`must fix` / `should fix` / `consider`).
+-   A **Issues found** bullet list — **never a numbered list** (numbers break whenever an item is
+    inserted or deleted). Tag each item with severity (`must fix` / `should fix` / `consider`).
     Reference each affected file with a markdown link using the same convention (project-root-relative
     path as display text, `../`-prefixed as URL). When the issue concerns a specific section, append
     a heading anchor to the URL and use a short descriptive label as display text (e.g.
@@ -138,9 +139,9 @@ with no significant scope violations? If yes, moving it is the right first step.
 Example:
 
 ```
-1. [must fix] Shorten intro of doc-telescopic/20_functional_specification/spec.md to one sentence + link to capability spec
-2. [should fix] Rename doc-telescopic/architecture/ → doc-telescopic/30_architecture/ to add sort prefix
-3. [consider] Create doc-telescopic/10_capability_specification/ with a skeleton spec.md
+- [must fix] Shorten intro of doc-telescopic/20_functional_specification/spec.md to one sentence + link to capability spec
+- [should fix] Rename doc-telescopic/architecture/ → doc-telescopic/30_architecture/ to add sort prefix
+- [consider] Create doc-telescopic/10_capability_specification/ with a skeleton spec.md
 ```
 
 Ask the user which actions to approve. If the user declines or disagrees with any proposed action,
@@ -148,8 +149,8 @@ record it in `.telescopic/decisions.md` with a one-line summary of what was decl
 user gave a reason, the reason. Commit this file and tell the user its path so they can edit or
 remove the entry if they change their mind later.
 
-Once confirmed, write the approved actions as a numbered list in `.telescopic/todo.md`, then
-commit:
+Once confirmed, write the approved actions as a bullet list — **never a numbered list** (numbers
+break whenever an item is inserted or deleted) — in `.telescopic/todo.md`, then commit:
 
 ```
 git add .telescopic/todo.md
@@ -158,14 +159,14 @@ git commit -m "telescope: record approved action list"
 
 ## Step 5 — Apply actions
 
-Work through `.telescopic/todo.md` from item 1 downward.
+Work through `.telescopic/todo.md` from top to bottom.
 
 For each item:
 
-1.  Apply the change (rename, create file, move section, shorten intro, etc.).
-2.  Commit the change with a descriptive message (e.g. `Shorten functional spec intro to one sentence`).
-3.  Remove that item from `.telescopic/todo.md`.
-4.  Commit the updated todo with:
+-   Apply the change (rename, create file, move section, shorten intro, etc.).
+-   Commit the change with a descriptive message (e.g. `Shorten functional spec intro to one sentence`).
+-   Remove that item from `.telescopic/todo.md`.
+-   Commit the updated todo with:
     ```
     git commit -m "telescope: mark action done — [one-line description]"
     ```
