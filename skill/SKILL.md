@@ -121,11 +121,15 @@ project-root-relative path with an `#anchor` suffix when applicable.
 
 Write `.telescopic/report.md` with:
 
+-   A **header** containing: the date of analysis (e.g. `Generated: 2026-04-23`) and the git
+    revision (e.g. `Revision: ` followed by the output of `git describe --always --tags --dirty`)
+
 -   A **Current state** section grouping files by directory. Use judgment: files that naturally
     cluster together (e.g. all root-level files, all files under `doc-telescopic/`) share one
-    table; avoid creating so many tables that the grouping becomes noise. Use markdown links for
-    every file path: link text is the project-root-relative path; URL is the same path prefixed
-    with `../` (since `.telescopic/` is one level below the project root):
+    table; avoid creating so many tables that the grouping becomes noise. Each section heading
+    names the common directory prefix, and that prefix is stripped from all link texts in the
+    table — keeping rows short and readable. The link URL still uses the full project-root-relative
+    path prefixed with `../` (since `.telescopic/` is one level below the project root):
 
     ### Repo root
 
