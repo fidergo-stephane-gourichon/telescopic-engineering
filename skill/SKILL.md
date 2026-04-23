@@ -119,6 +119,13 @@ Present the issues and a numbered proposed action list to the user. Order action
 disruptive to most (renames before reorganizations before new files before content rewrites).
 Tag each with its severity.
 
+If the existing documents are already clearly separated by stage and their contents match the
+desired structure closely enough, propose a rename/move plan as the first action — before any
+content edits. A rename/move plan groups all file relocations and cross-reference updates into
+a single proposal for the user to review and approve before anything is applied. The test: would
+an experienced reader recognize the existing document as clearly belonging to the target stage,
+with no significant scope violations? If yes, moving it is the right first step.
+
 Example:
 
 ```
