@@ -97,14 +97,20 @@ Create `.telescopic/` at the project root if it does not exist.
 
 Write `.telescopic/report.md` with:
 
-1.  A **Current state** table:
+1.  A **Current state** table. Use markdown links for every file path. The link text is the
+    project-root-relative path (so it reads like a wikilink when rendered); the URL is the same
+    path prefixed with `../` (since `.telescopic/` is one level below the project root):
 
     | File | Stage | Notes |
     |---|---|---|
-    | README.md | README | |
-    | doc-telescopic/10_capability_specification/spec.md | capability-spec | |
+    | [README.md](../README.md) | README | |
+    | [doc-telescopic/10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec | |
 
 2.  A **Issues found** list, each tagged with severity (`must fix` / `should fix` / `consider`).
+    Reference each affected file with a markdown link using the same convention (project-root-relative
+    path as display text, `../`-prefixed as URL). When the issue concerns a specific section, append
+    a heading anchor to the URL and use a short descriptive label as display text (e.g.
+    `[func spec § Introduction](../doc-telescopic/20_functional_specification/spec.md#introduction)`).
 
 Then commit:
 
