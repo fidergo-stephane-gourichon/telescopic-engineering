@@ -100,14 +100,24 @@ Create `.telescopic/` at the project root if it does not exist.
 
 Write `.telescopic/report.md` with:
 
--   A **Current state** table. Use markdown links for every file path. The link text is the
-    project-root-relative path (so it reads like a wikilink when rendered); the URL is the same
-    path prefixed with `../` (since `.telescopic/` is one level below the project root):
+-   A **Current state** section grouping files by directory. Use judgment: files that naturally
+    cluster together (e.g. all root-level files, all files under `doc-telescopic/`) share one
+    table; avoid creating so many tables that the grouping becomes noise. Use markdown links for
+    every file path: link text is the project-root-relative path; URL is the same path prefixed
+    with `../` (since `.telescopic/` is one level below the project root):
+
+    ### Repo root
 
     | File | Stage | Notes |
     |---|---|---|
     | [README.md](../README.md) | README | |
+
+    ### doc-telescopic/
+
+    | File | Stage | Notes |
+    |---|---|---|
     | [doc-telescopic/10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec | |
+    | [doc-telescopic/20_functional_specification/spec.md](../doc-telescopic/20_functional_specification/spec.md) | functional-spec | |
 
 -   A **Issues found** bullet list — **never a numbered list** (numbers break whenever an item is
     inserted or deleted). Tag each item with severity (`must fix` / `should fix` / `consider`).
