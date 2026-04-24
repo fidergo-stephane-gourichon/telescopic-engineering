@@ -141,8 +141,8 @@ Write `.telescopic/report.md` with:
 
     | File | Stage | Notes |
     |---|---|---|
-    | [doc-telescopic/10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec | |
-    | [doc-telescopic/20_functional_specification/spec.md](../doc-telescopic/20_functional_specification/spec.md) | functional-spec | |
+    | [10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec | |
+    | [20_functional_specification/spec.md](../doc-telescopic/20_functional_specification/spec.md) | functional-spec | |
 
 -   A **Issues found** bullet list — **never a numbered list** (numbers break whenever an item is
     inserted or deleted). Tag each item with severity (`must fix` / `should fix` / `consider`).
