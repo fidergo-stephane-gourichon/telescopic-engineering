@@ -153,7 +153,7 @@ Then commit:
 
 ```
 git add .telescopic/report.md
-git commit -m "telescope: record analysis report"
+git commit -m "telescopic: record analysis report"
 ```
 
 ## Step 4 — Propose and approve
@@ -186,7 +186,7 @@ Once confirmed, write the approved actions as a bullet list in `.telescopic/todo
 
 ```
 git add .telescopic/todo.md
-git commit -m "telescope: record approved action list"
+git commit -m "telescopic: record approved action list"
 ```
 
 ## Step 5 — Apply actions
@@ -200,7 +200,7 @@ For each item:
 -   Remove that item from `.telescopic/todo.md`.
 -   Commit the updated todo with:
     ```
-    git commit -m "telescope: mark action done — [one-line description]"
+    git commit -m "telescopic: mark action done — [one-line description]"
     ```
 
 The structural change and the todo update are coupled — commit them in the order above but treat
