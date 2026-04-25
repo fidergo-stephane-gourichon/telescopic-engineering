@@ -144,8 +144,7 @@ Write `.telescopic/report.md` with:
     | [10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec | |
     | [20_functional_specification/spec.md](../doc-telescopic/20_functional_specification/spec.md) | functional-spec | |
 
--   A **Issues found** bullet list — **never a numbered list** (numbers break whenever an item is
-    inserted or deleted). Tag each item with severity (`must fix` / `should fix` / `consider`).
+-   A **Issues found** bullet list. Tag each item with severity (`must fix` / `should fix` / `consider`).
     Apply the linking convention above: use a section anchor whenever possible (e.g.
     `[func spec § Introduction](../doc-telescopic/20_functional_specification/spec.md#introduction)`);
     bare file link only when the issue spans the whole document.
@@ -159,7 +158,7 @@ git commit -m "telescope: record analysis report"
 
 ## Step 4 — Propose and approve
 
-Present the issues and a numbered proposed action list to the user. Order actions from least
+Present the issues and a proposed action list to the user. Order actions from least
 disruptive to most (renames before reorganizations before new files before content rewrites).
 Tag each with its severity.
 
@@ -183,8 +182,7 @@ record it in `.telescopic/decisions.md` with a one-line summary of what was decl
 user gave a reason, the reason. Commit this file and tell the user its path so they can edit or
 remove the entry if they change their mind later.
 
-Once confirmed, write the approved actions as a bullet list — **never a numbered list** (numbers
-break whenever an item is inserted or deleted) — in `.telescopic/todo.md`, then commit:
+Once confirmed, write the approved actions as a bullet list in `.telescopic/todo.md`, then commit:
 
 ```
 git add .telescopic/todo.md
@@ -223,3 +221,5 @@ have been applied.
 -   The method allows skipping or merging stages for small projects. When flagging a missing stage
     as "may be intentionally absent", suggest the lightweight option: a single-sentence
     acknowledgement file rather than a full document.
+-   Do not write numbered lists in a file (because numbers break whenever an item is
+    inserted or deleted). Use stable IDs instead (e.g. initials of the main key words, or just a few key words).
