@@ -38,6 +38,6 @@ Telescopic engineering structures a project as a chain of stages with **progress
 
 At any time you only have to focus on part of any stage, evaluate and correct it, and the overall structure will help other actors (humans or AI) to propagate whatever you express into full-fledged working implementation.
 
-A key benefit: because upstream documents are self-contained, any downstream stage can be discarded and rebuilt without losing the project's foundation. This applies at every scale -- rewriting code from unchanged implementation docs, re-architecting from an unchanged functional spec, or pivoting the entire technology stack while preserving the capability specification. The upstream documents act as a stable checkpoint from which downstream work can always be regenerated.
+A key benefit: because upstream documents are self-contained, any downstream stage can be discarded and rebuilt without losing the project's foundation. This applies at every scale -- rewriting some code from unchanged implementation docs and tests, re-architecting from an unchanged functional spec, or pivoting the technology stack while preserving the functional specification. The upstream documents act as a stable checkpoint from which downstream work can be regenerated.
 
 In other words, it's mainly reusing the old working recipes, but tuned to a software project where human(s) and AI(s) work together, allowing the human to maintain proper steering and high velocity.
