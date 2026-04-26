@@ -16,6 +16,8 @@ A one-sentence pitch immediately after the title, before any section heading, te
 
 After the hook, sections flesh out the pitch.
 
+The hook's goal is to convey *why this project exists*, not merely what it does. A hook that names only the mechanism -- "a tool for X" -- says nothing about what makes the project worth using instead of the obvious alternative. When the project embodies a key insight or takes a principled approach to a non-obvious problem, that insight belongs in the hook. The test: could a visitor tell from the hook alone that this project makes a specific, considered choice -- or does it read like any tool in the space? If the latter, the insight has not been captured.
+
 Near-universal sections
 -----------------------
 
