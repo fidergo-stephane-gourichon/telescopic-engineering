@@ -7,10 +7,12 @@ Telescopic engineering: restoring project viability in the AI era
 
 You've just read the shortest pitch. You can read the next "telescopic engineering" stage below or go straight to [full details](20_detailed_description.md).
 
-Why telescopic engineering works
---------------------------------
+What you get
+------------
 
-Telescopic engineering puts AI to work where it helps (controlled expansion from short blurbs, consistency checks, propagation across documents) and puts humans back at the center: big picture, writing and proofreading short extracts, judgment calls.
+**Right roles for each party.** AI does what it's good at (controlled expansion from short blurbs, consistency checks, propagation across documents). Humans stay in charge of what they do well (big picture, writing and proofreading short extracts, judgment calls).
+
+**Freedom to rebuild.** Because each upstream document is self-contained, any downstream stage could even be regenerated, in part or in full — rewriting some code from unchanged implementation docs and tests, re-architecting from an unchanged functional spec, even pivoting the technology stack while preserving the functional specification.
 
 See [motivation](10_motivation.md) for the full argument.
 
