@@ -23,7 +23,7 @@ A sharper formulation of the same test: lead with the *pain* the visitor feels, 
 Near-universal sections
 -----------------------
 
-- **"What's this?"** -- one to three sentences expanding the hook into a concrete description.
+- **"What's this?"** -- one to three sentences telling what kind of thing is defined here (a tool? a method? something else?) so that the reader knows what to expect in practice that solves their pain point.
 
 - **"Why this?" or "the challenge"** -- what problem the project solves, or why the problem is hard enough to warrant a tool. When the difficulty is non-obvious, explaining it justifies the project's existence and educates the visitor.
 
