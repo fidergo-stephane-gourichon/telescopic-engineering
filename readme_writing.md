@@ -18,6 +18,8 @@ After the hook, sections flesh out the pitch.
 
 The hook's goal is to convey *why this project exists*, not merely what it does. A hook that names only the mechanism -- "a tool for X" -- says nothing about what makes the project worth using instead of the obvious alternative. When the project embodies a key insight or takes a principled approach to a non-obvious problem, that insight belongs in the hook. The test: could a visitor tell from the hook alone that this project makes a specific, considered choice -- or does it read like any tool in the space? If the latter, the insight has not been captured.
 
+A sharper formulation of the same test: lead with the *pain* the visitor feels, or the *tradeoff* the project resolves, not the mechanism the project uses. "Automated X for Y" tells the visitor what the tool does; "Stop suffering from Z" or "Stuck between A and B? Now you can have both" tells the visitor why they should care. A pain-led hook can be declarative, but rhetorical questions ("Wishing for X? Tired of Y?") often work harder, putting the visitor in their own situation before the project name has even registered. The mechanism form reads like every other tool in its space; the pain form earns the next sentence of attention.
+
 Near-universal sections
 -----------------------
 
