@@ -20,6 +20,8 @@ The hook's goal is to convey *why this project exists*, not merely what it does.
 
 A sharper formulation of the same test: lead with the *pain* the visitor feels, or the *tradeoff* the project resolves, not the mechanism the project uses. "Automated X for Y" tells the visitor what the tool does; "Stop suffering from Z" or "Stuck between A and B? Now you can have both" tells the visitor why they should care. A pain-led hook can be declarative, but rhetorical questions ("Wishing for X? Tired of Y?") often work harder, putting the visitor in their own situation before the project name has even registered. The mechanism form reads like every other tool in its space; the pain form earns the next sentence of attention.
 
+In a telescopic analysis, a hook that fails this test is always a **must-fix** issue, raised without waiting for the user to notice it. The hook is the highest-visibility text in the entire project; a weak or mechanism-only hook is a more urgent problem than most structural issues deeper in the document chain.
+
 Near-universal sections
 -----------------------
 
