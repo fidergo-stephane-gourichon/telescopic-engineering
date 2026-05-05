@@ -28,7 +28,7 @@ See [[readme_writing.md]] for a catalog of sections worth considering and the ra
 
 The capability specification provides a *high-level description* of *all* the capabilities of the system.
 
-No detail about how the user will interact or how features are implemented.
+No detail about how the user will interact or how features are implemented. In particular, do not name any commands, CLI flags, subcommand names, or UI elements -- those belong in the functional specification.
 
 This stage is important because it details the *properties* that are needed ("a user must be able to...") but not the *how* ("a window with title FOO, content BAR and ok/cancel buttons").
 
