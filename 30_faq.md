@@ -85,6 +85,18 @@ Yes. The full five-stage chain is the general case, not a minimum requirement. T
 
 The minimum viable set is: README (what this is) + a specification (what it does and how) + code.
 
+### How is this different from Claude's plan mode?
+
+Plan mode and similar features in coding assistants share an insight with telescopic engineering: produce a short, higher-level artifact, get human review on it, then let the AI propagate it into concrete output. Telescopic engineering pushes the same insight further on three axes.
+
+- **Persistence.** A plan-mode plan is typically session-scoped: it informs one round of work and is then discarded along with its rationale. Telescopic documents live in the repository, evolve with the project, and remain available for every future round of work, review, or onboarding.
+
+- **Levels.** Plan mode produces a single artifact that tends to mix goals, behavior, and implementation details. Telescopic engineering separates these into distinct stages, each at its own altitude. A reader can stop at the level relevant to their question rather than wading through everything, and the same property scales the approach to projects whose plan-mode equivalent would be unmanageably long.
+
+- **Regeneration.** Because each upstream stage is self-contained, any downstream stage can be discarded and rebuilt: rewriting code from unchanged implementation docs, re-architecting from an unchanged functional spec, even pivoting the technology stack while preserving the functional specification. A plan, once executed, offers no comparable foundation.
+
+The two are compatible, not competing. Plan mode is a tactical tool for one session; telescopic engineering is a structural choice for the project as a whole. Plan mode is in fact a natural way to draft or update a single stage.
+
 ### Any other resources or similar endeavor?
 
 Yes.
