@@ -1,6 +1,8 @@
 Telescopic engineering
 ======================
 
+<img src="telescopic_engineering.png" alt="Telescopic engineering" align="right" style="margin-left: 1em; width: 12em;">
+
 **Problem:** AI provides code fast, at a cost of grave loss of control.
 
 **Solution:** restore control through a chain of progressively detailed documents, from README to code.
