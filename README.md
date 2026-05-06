@@ -1,5 +1,5 @@
-Telescopic engineering: restoring project viability in the AI era
-=================================================================
+Telescopic engineering
+======================
 
 **Problem:** AI provides code fast, at a cost of grave loss of control.
 
