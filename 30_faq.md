@@ -1,7 +1,7 @@
 Frequently asked questions
 ==========================
 
-Frequently asked questions about [telescopic engineering](README.md). For the full methodology, see [how it works](20_detailed_description.md).
+Part of [telescopic engineering](README.md). For the full methodology, see [how it works](20_detailed_description.md).
 
 ### That makes many documents? Is this overkill, bureaucracy?
 
