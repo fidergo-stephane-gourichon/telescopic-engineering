@@ -5,7 +5,7 @@ Telescopic engineering: restoring project viability in the AI era
 
 **Solution:** restore control through a chain of progressively detailed documents, from README to code.
 
-You've just read the shortest pitch. You can read the next "telescopic engineering" stage below or go straight to [full details](20_detailed_description.md).
+You've just read the shortest pitch. You can read the next "telescopic engineering" stage below or skip to [motivation](10_motivation.md) or go straight to [full details](20_detailed_description.md).
 
 What you get
 ------------
