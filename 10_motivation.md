@@ -44,4 +44,7 @@ A key benefit: because upstream documents are self-contained, any downstream sta
 
 In other words, it's mainly reusing the old working recipes, but tuned to a software project where human(s) and AI(s) work together, allowing the human to maintain proper steering and high velocity.
 
+Navigation
+----------
+
 Continue to [how it works](20_detailed_description.md) for the stage-by-stage breakdown.

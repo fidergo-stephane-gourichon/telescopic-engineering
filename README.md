@@ -38,4 +38,7 @@ Name origin
 
 Like a pocket telescope that extends in nested segments, the method extends a project as a chain of documents, each segment revealing more detail without disturbing the alignment of the whole.
 
+Navigation
+----------
+
 See [motivation](10_motivation.md) for the full argument, [how it works](20_detailed_description.md) for the stage-by-stage breakdown, and the [FAQ](30_faq.md) for common questions.

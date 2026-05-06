@@ -96,4 +96,7 @@ Yes.
   - [celesteanders/harness: Harness engineering best practices](https://github.com/celesteanders/harness)
   - [harness/docs/best-practices.md at main · celesteanders/harness](https://github.com/celesteanders/harness/blob/main/docs/best-practices.md)
 
+Navigation
+----------
+
 Back to [README](README.md), or see [how it works](20_detailed_description.md) for the full stage breakdown.

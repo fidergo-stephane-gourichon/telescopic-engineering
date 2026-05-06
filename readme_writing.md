@@ -74,4 +74,7 @@ The sections above are a palette, not a template. A README may reorder them, mer
 
 When deciding which sections to include, apply judgment freely: skip sections that add no value for a given project, invent new section topics when the project warrants them, and adjust the canonical names when a better label serves the reader. One constraint is non-negotiable: each section's content must be consistent with its title. A "What's this?" that explains why the project exists, a "Quick start" that reads like an architecture overview, or a "Why this?" that describes usage -- these are not wrong choices of section, they are broken sections. And together the included sections must form a coherent, concise pitch: each one should earn its place by adding something the others do not already say.
 
+Navigation
+----------
+
 Back to [how it works](20_detailed_description.md).

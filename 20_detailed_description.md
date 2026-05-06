@@ -105,4 +105,7 @@ Observations
 
 - Yet the relation is asymmetrical: from any stage, it and all downstream stages could be completely cut off and the remaining upstream stages would make an incomplete but standalone and consistent document set, allowing to rebuild all downstream documents. A typical scenario is eliminating technical debt: a prototype was coded in a language and as the project evolves a complete rewrite is due.
 
+Navigation
+----------
+
 For common questions, see the [FAQ](30_faq.md). Back to [README](README.md).
