@@ -1,6 +1,8 @@
 Frequently asked questions
 ==========================
 
+Frequently asked questions about [telescopic engineering](README.md). For the full methodology, see [how it works](20_detailed_description.md).
+
 ### That makes many documents? Is this overkill, bureaucracy?
 
 Maintaining consistency across several documents is real work -- but significantly less than the alternative, and the cost drops sharply with AI assistance. An AI can check consistency between stages, propagate a change from an upstream document into downstream ones, and flag drift. The human reviewer then only needs to validate concise upstream documents and verify that downstream propagation is correct.
@@ -93,3 +95,5 @@ Yes.
 - [I had Claude read every harness engineering guide and build me one : r/ClaudeAI](https://www.reddit.com/r/ClaudeAI/comments/1s9jm0d/i_had_claude_read_every_harness_engineering_guide/)
   - [celesteanders/harness: Harness engineering best practices](https://github.com/celesteanders/harness)
   - [harness/docs/best-practices.md at main · celesteanders/harness](https://github.com/celesteanders/harness/blob/main/docs/best-practices.md)
+
+Back to [README](README.md), or see [how it works](20_detailed_description.md) for the full stage breakdown.
