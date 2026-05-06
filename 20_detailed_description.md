@@ -24,7 +24,7 @@ README.md is the entry point for everyone and targets the random visitor who lan
 
 It must pitch the project and provide minimal entry points to any area where the visitor wants to know more or experiment. Every section stays concise (a few sentences); each may link to deeper documents.
 
-See [[readme_writing.md]] for a catalog of sections worth considering and the rationale behind each.
+See [readme_writing.md](readme_writing.md) for a catalog of sections worth considering and the rationale behind each.
 
 ### Capability specification
 
