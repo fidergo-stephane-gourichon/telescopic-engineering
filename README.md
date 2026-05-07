@@ -31,6 +31,10 @@ README.md -> capability spec -> functional spec -> architecture -> implementatio
 
 - and some rules about where AI is used to perform steps that are traditionally costly for humans (e.g. controlling consistency, carefully propagating changes) and where AI stops to let humans do what they are good at.
 
+- a CLI skill (`/telescopic`) to guide and automate applying the method: audit docs against the method's rules, propose concrete improvements, and drive implementation with human review at each step.
+
+That's where the skill amplifies the method. Rather than drowning you in generated content, the AI is now guided by documents that stay aligned: you review short passages from the shortest applicable stage to confirm they match your intent, if needed edit them, and the AI propagates the changes in any direction needed, under your control.
+
 When each party does what they are best at, you get the smoothest experience and achieve your goals.
 
 See [full details](20_detailed_description.md) for the stage-by-stage breakdown, and the [FAQ](30_faq.md) for common questions.
