@@ -44,6 +44,11 @@ Name origin
 
 Like a pocket telescope that extends in nested segments, the method extends a project as a chain of documents, each segment revealing more detail without disturbing the alignment of the whole.
 
+Status
+------
+
+The method itself looks sound: it has already delivered useful results in a few projects. The accompanying `/telescopic` skill was only tested in a few cases and will most certainly need some hints in practice until refined. Overall, the project is useful and bound to keep improving.
+
 Navigation
 ----------
 
