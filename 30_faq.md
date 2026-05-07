@@ -85,6 +85,12 @@ Yes. The full five-stage chain is the general case, not a minimum requirement. T
 
 The minimum viable set is: README (what this is) + a specification (what it does and how) + code.
 
+### What if existing docs don't match the canonical stage slicing?
+
+The most useful property of the method -- consistency between documents of different levels of detail -- does not require strict stage boundaries. A clear gradation from short to detailed is enough: each level remains authoritative within its scope, and downstream documents must not contradict upstream ones.
+
+This very project illustrates the case: its docs (README, motivation, detailed description, FAQ) do not map cleanly onto the canonical capability / functional / architecture / implementation slices, and there is no code at all. Yet the gradation from short to detailed is unmistakable -- enough to apply the consistency-checking part of the method. The same holds for any methodology guide, manual, or design study with a comparable gradation.
+
 ### How is this different from Claude's plan mode?
 
 Plan mode and similar features in coding assistants share an insight with telescopic engineering: produce a short, higher-level artifact, get human review on it, then let the AI propagate it into concrete output. Telescopic engineering pushes the same insight further on three axes.
