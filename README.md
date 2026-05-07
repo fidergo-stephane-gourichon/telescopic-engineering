@@ -26,7 +26,12 @@ Telescopic engineering defines:
 - a chain of stages, each a refinement of the previous one
 
 ``` default
-README.md -> capability spec -> functional spec -> architecture -> implementation -> code
+README.md
+  -> capability spec
+     -> functional spec
+        -> architecture
+           -> implementation
+              -> code
 ```
 
 - and some rules about where AI is used to perform steps that are traditionally costly for humans (e.g. controlling consistency, carefully propagating changes) and where AI stops to let humans do what they are good at.
