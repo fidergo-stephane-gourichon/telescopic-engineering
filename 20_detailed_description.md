@@ -3,6 +3,9 @@ How telescopic engineering works
 
 See [motivation](10_motivation.md) for the argument behind the approach. Below is the stage-by-stage breakdown.
 
+Core principles
+---------------
+
 The system is a chain of stages, from upstream (concise, high-level) to downstream (detailed, low-level).
 
 Because each document is minimal, it is easy and quick to review or even read in depth, yet it is the solid foundation on which all downstream documents rest.
