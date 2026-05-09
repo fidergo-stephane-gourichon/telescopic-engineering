@@ -7,7 +7,7 @@ Part of [telescopic engineering](README.md). For the full methodology, see [how 
 
 Maintaining consistency across several documents is real work -- but significantly less than the alternative, and the cost drops sharply with AI assistance. An AI can check consistency between stages, propagate a change from an upstream document into downstream ones, and flag drift. The human reviewer then only needs to validate concise upstream documents and verify that downstream propagation is correct.
 
-Without this structure, the equivalent effort goes into untangling confusion, reworking feature drift, and answering questions that a clear upstream document would have prevented. The structure does not eliminate work; it redirects effort from reactive firefighting to proactive review of short, focused documents.
+Without this structure, the same work still has to happen -- only later, and as reactive fixes once confusion, feature drift, and unanswered questions surface. The structure does not eliminate the work; it shifts effort earlier, to short focused review of upstream documents, where catching a problem is far cheaper.
 
 In practice, the first documents are very short. Each stage is not much longer than the previous. From one stage to the next the gap is manageable.
 
