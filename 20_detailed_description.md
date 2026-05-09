@@ -106,7 +106,7 @@ Observations
 
 - The documents are interdependent and overlap in their content, if only because each document goes into more details about what the upstream one explained.
 
-- Yet the relation is asymmetrical: from any stage, it and all downstream stages could be completely cut off and the remaining upstream stages would make an incomplete but standalone and consistent document set, allowing to rebuild all downstream documents. A typical scenario is eliminating technical debt: a prototype was coded in a language and as the project evolves a complete rewrite is due.
+- Yet the relation is asymmetrical: from any stage, it and all downstream stages could be completely cut off and the remaining upstream stages would still make a standalone and consistent document set. A typical scenario is eliminating technical debt: a prototype was coded in a language and as the project evolves a complete rewrite is due.
 
 Navigation
 ----------
