@@ -14,7 +14,7 @@ Each document covers only what its stage describes and no more: any further deta
 
 Yet all documents are authoritative: downstream documents make some decisions explicit and provide more details, yet must not deviate from what is stated in upstream documents.
 
-As a consequence, the introduction of any stage document is extremely short: rather than repeating the upstream content, it is ideally just one introductory sentence.
+As a consequence, the introduction of any stage document is extremely short: rather than repeating the upstream content, it is ideally one or two sentences. The intro summarises what the previous stage established and what this stage adds -- enough for a reader who lands on the document by chance to orient themselves without reading the whole chain.
 
 Below is an archetype of the stages that together serve the purpose, from the most upstream to the most downstream.
 
@@ -113,11 +113,25 @@ Practical concerns
 
 **Format.** Markdown is the natural choice for stage documents: readable as plain text, widely rendered, and version-control-friendly.
 
-**Navigation links.** Each stage document has a short prose intro at the top (linking upstream, as described in Core principles) and a dedicated `Navigation` section at the bottom. The bottom section contains a three-part line: the previous stage, a link to the current document's top, and the next stage:
+**Document structure.** Each stage document follows this layout:
+
+1.  The title heading.
+2.  The intro (one or two sentences as described in Core principles).
+3.  A top navigation bar -- immediately after the intro, before any content section.
+4.  The content sections.
+5.  A `Navigation` section at the bottom.
+
+**Navigation bars.** Both bars use a three-part line: previous stage, current document label, next stage. The markers make direction visible in the markdown source:
+
+Top bar (plain center -- you are already at the top):
+
+`[< README <](link) || capability specification || [> functional specification >](link)`
+
+Bottom bar (linked center -- jump back to top after reading):
 
 `[< README <](link) || [^ capability specification ^](#capability-specification) || [> functional specification >](link)`
 
-The `<` markers bracket the upstream link; the `^` markers bracket a link to the current document's top, using the first heading as the anchor (e.g. `#capability-specification`); the `>` markers bracket the downstream link.
+The `<` markers bracket the upstream link; plain text or `^`-bracketed text identifies the current document; the `>` markers bracket the downstream link.
 
 Keep document title headings in plain ASCII. The heading-to-anchor mapping (`# Some Title` -> `#some-title`) is a widely-followed convention, not a standard: renderers agree on plain ASCII but diverge on accents, Unicode, and special characters.
 
