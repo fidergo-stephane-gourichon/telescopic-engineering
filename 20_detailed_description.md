@@ -14,7 +14,7 @@ Each document covers only what its stage describes and no more: any further deta
 
 Yet all documents are authoritative: downstream documents make some decisions explicit and provide more details, yet must not deviate from what is stated in upstream documents.
 
-As a consequence, the introduction of any stage document is extremely short: rather than repeating the upstream content, it is just one introductory sentence and a link upstream.
+As a consequence, the introduction of any stage document is extremely short: rather than repeating the upstream content, it is ideally just one introductory sentence.
 
 Below is an archetype of the stages that together serve the purpose, from the most upstream to the most downstream.
 
@@ -99,7 +99,7 @@ Notice that code-local documents should exist in the source tree:
 
 - structured code comments that allow automatic extraction into documentation
 
-Care must be taken to have abundance of cross-references for the reviewer's convenience (clarity, navigation).
+Inline prose links to related documents, functions, and sections should be abundant: they let a reviewer jump directly to relevant context without searching.
 
 Observations
 ------------
@@ -107,6 +107,17 @@ Observations
 - The documents are interdependent and overlap in their content, if only because each document goes into more details about what the upstream one explained.
 
 - Yet the relation is asymmetrical: from any stage, it and all downstream stages could be completely cut off and the remaining upstream stages would still make a standalone and consistent document set. A typical scenario is eliminating technical debt: a prototype was coded in a language and as the project evolves a complete rewrite is due.
+
+Practical concerns
+------------------
+
+**Format.** Write all stage documents in Markdown.
+
+**Navigation links.** Each stage document carries navigation links at both the top and bottom, pointing to the previous and next stage. Use a style that makes direction clear in the markdown source:
+
+`[< capability spec](link) | [architecture >](link)`
+
+The `<` prefix marks the upstream (previous) stage; the `>` suffix marks the downstream (next) stage.
 
 Navigation
 ----------
