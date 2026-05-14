@@ -111,13 +111,15 @@ Observations
 Practical concerns
 ------------------
 
-**Format.** Write all stage documents in Markdown.
+**Format.** Markdown is the natural choice for stage documents: readable as plain text, widely rendered, and version-control-friendly.
 
-**Navigation links.** Each stage document carries navigation links at both the top and bottom, pointing to the previous and next stage. Use a style that makes direction clear in the markdown source:
+**Navigation links.** Each stage document has a short prose intro at the top (linking upstream, as described in Core principles) and a dedicated `Navigation` section at the bottom. The bottom section contains a three-part line: the previous stage, a link to the current document's top, and the next stage:
 
-`[< capability spec](link) | [architecture >](link)`
+`[< README <](link) || [^ capability specification ^](#capability-specification) || [> functional specification >](link)`
 
-The `<` prefix marks the upstream (previous) stage; the `>` suffix marks the downstream (next) stage.
+The `<` markers bracket the upstream link; the `^` markers bracket a link to the current document's top, using the first heading as the anchor (e.g. `#capability-specification`); the `>` markers bracket the downstream link.
+
+Keep document title headings in plain ASCII. The heading-to-anchor mapping (`# Some Title` -> `#some-title`) is a widely-followed convention, not a standard: renderers agree on plain ASCII but diverge on accents, Unicode, and special characters.
 
 Navigation
 ----------
