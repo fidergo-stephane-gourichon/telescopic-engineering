@@ -121,6 +121,8 @@ Practical concerns
 4.  The content sections.
 5.  A `Navigation` section at the bottom.
 
+**Intro sentence(s).** The intro has two parts with distinct purposes. The summary of the previous stage contains actual information drawn from its content -- specific features, constraints, or decisions established there. The announcement of the current stage is merely structural: it names what this document covers without pre-empting its content. A reader who stumbles on this document by chance should be able to orient themselves from the summary alone, without having read the previous stage.
+
 **Navigation bars.** Both bars use a three-part line: previous stage, current document label, next stage. The markers make direction visible in the markdown source:
 
 Top bar (plain center -- you are already at the top):
