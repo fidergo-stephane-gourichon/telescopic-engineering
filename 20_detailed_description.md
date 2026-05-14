@@ -125,11 +125,11 @@ Practical concerns
 
 Top bar (plain center -- you are already at the top):
 
-`[< README <](link) || capability specification || [> functional specification >](link)`
+`[< README <](link) == capability specification == [> functional specification >](link)`
 
 Bottom bar (linked center -- jump back to top after reading):
 
-`[< README <](link) || [^ capability specification ^](#capability-specification) || [> functional specification >](link)`
+`[< README <](link) == [^ capability specification ^](#capability-specification) == [> functional specification >](link)`
 
 The `<` markers bracket the upstream link; plain text or `^`-bracketed text identifies the current document; the `>` markers bracket the downstream link.
 
