@@ -25,7 +25,7 @@ A suggested layout:
 
 ``` default
 README.md
-doc/
+doc-telescopic/
   10_capability_specification/
   20_functional_specification/
   30_architecture/
@@ -35,7 +35,7 @@ src/
 
 The numeric prefixes enforce sort order in directory listings so the chain reads top-to-bottom. The gaps (10, 20, 30, 40) leave room for inserting a stage without renumbering. Each stage is a directory (not a file) from the start, so companion artifacts (acceptance tests, decision records) have a natural home without renaming.
 
-README.md lives at the repository root (stage 0, implicitly) since that is where repository visitors expect it. Code lives outside `doc/` in its own tree.
+README.md lives at the repository root (stage 0, implicitly) since that is where repository visitors expect it. Code lives outside `doc-telescopic/` in its own tree.
 
 Each directory contains at least a main document. The naming convention for the main document is a project-level decision (e.g. always `spec.md`, or matching the directory name).
 
