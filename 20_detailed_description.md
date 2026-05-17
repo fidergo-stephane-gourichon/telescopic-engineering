@@ -135,6 +135,8 @@ Bottom bar (linked center -- jump back to top after reading):
 
 The `<` markers bracket the upstream link; plain text or `^`-bracketed text identifies the current document; the `>` markers bracket the downstream link.
 
+**Filesystem structuration.** Stage documents are organised by a single recurring pattern: a `foo.md` file paired with an optional `foo/` directory into which oversized sections spill, and back into which small files collapse. It applies at every level, from the documentation root down to a single stage. It is foundational enough to have its own description -- see [the filesystem structuration pattern](20_detailed_description/filesystem_structuration_pattern.md).
+
 Keep document title headings in plain ASCII. The heading-to-anchor mapping (`# Some Title` -> `#some-title`) is a widely-followed convention, not a standard: renderers agree on plain ASCII but diverge on accents, Unicode, and special characters.
 
 Navigation

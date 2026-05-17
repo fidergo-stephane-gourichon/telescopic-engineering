@@ -25,6 +25,7 @@ A suggested layout:
 
 ``` default
 README.md
+doc-telescopic.md
 doc-telescopic/
   10_capability_specification/
   20_functional_specification/
@@ -38,6 +39,8 @@ The numeric prefixes enforce sort order in directory listings so the chain reads
 README.md lives at the repository root (stage 0, implicitly) since that is where repository visitors expect it. Code lives outside `doc-telescopic/` in its own tree.
 
 Each directory contains at least a main document. The naming convention for the main document is a project-level decision (e.g. always `spec.md`, or matching the directory name).
+
+`doc-telescopic.md` is the index of `doc-telescopic/`: it briefly introduces the method and enumerates the stage directories. This file-plus-directory pairing is a single recurring convention applied at every level -- see [the filesystem structuration pattern](20_detailed_description/filesystem_structuration_pattern.md).
 
 Notice that if the functional specification is not in the same repository as the code, then the acceptance tests are stored with the functional specification, not with the code. In other words, position in the chain, not file style or tools, determines what is stored with what.
 

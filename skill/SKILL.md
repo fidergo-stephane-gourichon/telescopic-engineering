@@ -89,7 +89,7 @@ The enumeration below is only a suggestion of things to watch out for, not limit
 
 - **Downstream deviation**: a downstream document contradicts a claim made in an upstream document.
 
-- **Layout issues**: no `README.md` at the repo root; stage docs not organized under `doc-telescopic/`; stage directories missing numeric prefixes that would enforce sort order (e.g. `10_`, `20_`).
+- **Layout issues**: no `README.md` at the repo root; stage docs not organized under `doc-telescopic/`; no `doc-telescopic.md` index beside a populated `doc-telescopic/`; stage directories missing numeric prefixes that would enforce sort order (e.g. `10_`, `20_`); any deviation from [the filesystem structuration pattern](../20_detailed_description/filesystem_structuration_pattern.md).
 
 Document the kind of violation: rule violation, recommendation violation, improvement.
 
