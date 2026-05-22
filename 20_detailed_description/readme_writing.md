@@ -1,7 +1,7 @@
 Writing the README
 ==================
 
-This companion to [how telescopic engineering works](20_detailed_description.md) catalogs the sections worth considering in a README.md, and the rationale behind each.
+This companion to [how telescopic engineering works](../20_detailed_description.md) catalogs the sections worth considering in a README.md, and the rationale behind each.
 
 The hook
 --------
@@ -77,4 +77,4 @@ When deciding which sections to include, apply judgment freely: skip sections th
 Navigation
 ----------
 
-Back to [how it works](20_detailed_description.md).
+Back to [how it works](../20_detailed_description.md).

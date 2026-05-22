@@ -48,7 +48,7 @@ Read these files before performing any analysis. They are the authoritative refe
 
 - `~/.claude/skills/telescopic/docs/20_detailed_description.md` — stage definitions and rules
 - `~/.claude/skills/telescopic/docs/30_faq.md` — FAQ including the recommended `doc-telescopic/` layout
-- `~/.claude/skills/telescopic/docs/readme_writing.md` — catalog of README sections
+- `~/.claude/skills/telescopic/docs/20_detailed_description/readme_writing.md` — catalog of README sections
 
 Step 3 — Full analysis
 ----------------------
