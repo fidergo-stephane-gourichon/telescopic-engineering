@@ -1,6 +1,6 @@
 ---
 name: telescopic
-description: Survey a project's documentation, map it to telescoping-engineering stages, identify gaps and violations, and propose concrete improvements. Tracks progress in .telescopic/ so work survives across sessions.
+description: Survey a project's documentation, map it to telescopic-engineering stages, identify gaps and violations, and propose concrete improvements. Tracks progress in .telescopic/ so work survives across sessions.
 argument-hint: "[path]"
 ---
 
