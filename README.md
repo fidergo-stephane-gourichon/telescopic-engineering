@@ -12,6 +12,8 @@ You've just read the shortest pitch. You can read the next "telescopic engineeri
 What you get
 ------------
 
+No more drowning you with take-it-or-leave-it generated content. No more too big `agent.md` file that consumes precious context.
+
 **Right roles for each party.** AI does what it's good at (controlled expansion from short blurbs, consistency checks, propagation across documents). Humans stay in charge of what they do well (big picture, writing and proofreading short extracts, judgment calls).
 
 **Freedom to rebuild.** Because each upstream document is self-contained, any downstream stage could even be regenerated, in part or in full — rewriting some code from unchanged implementation docs and tests, re-architecting from an unchanged functional spec, even pivoting the technology stack while preserving the functional specification.
