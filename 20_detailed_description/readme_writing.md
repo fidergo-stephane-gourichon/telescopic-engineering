@@ -3,6 +3,11 @@ Writing the README
 
 This companion to [how telescopic engineering works](../20_detailed_description.md) catalogs the sections worth considering in a README.md, and the rationale behind each.
 
+If the project has no README.md, or a very insufficient one, it is best to flag deviations from these guidelines as high-priority. On the contrary, the prioritization of deviations can be greatly reduced if one or more of these properties is true:
+
+- an existing README.md covers the topics — especially clearly — even if not in this structure or order.
+- the user did not express any specific criticism about the README.md.
+
 The hook
 --------
 
