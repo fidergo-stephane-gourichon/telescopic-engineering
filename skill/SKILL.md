@@ -1,7 +1,7 @@
 ---
 name: telescopic
 description: Survey a project's documentation, map it to telescopic-engineering stages, identify gaps and violations, and propose concrete improvements. Tracks progress in .telescopic/ so work survives across sessions.
-argument-hint: "[path]"
+argument-hint: "[intent]"
 ---
 
 Telescopic
@@ -9,10 +9,10 @@ Telescopic
 
 Apply the telescopic engineering method to a project's documentation. Surveys existing docs, maps them to stages, identifies gaps and rule violations, proposes ordered changes, and applies them one at a time with commits. Progress is stored in `.telescopic/` so work survives across sessions and conversations.
 
-Step 0 — Determine project root
--------------------------------
+Step 0 — Heed user intent
+-------------------------
 
-If `$ARGUMENTS` is non-empty and resolves to a valid directory path, use it as the project root. Otherwise use the current working directory.
+If `$ARGUMENTS` is non-empty it's probably a hint about the user's intent, follow it. Else the conversation context might have hints about user intents, wishes and interaction/appoval style.
 
 Step 1 — Check for prior work
 -----------------------------
