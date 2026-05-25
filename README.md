@@ -9,6 +9,17 @@ Telescopic engineering
 
 You've just read the shortest pitch. You can read the next "telescopic engineering" stage below or skip to [motivation](10_motivation.md) or go straight to [full details](20_detailed_description.md).
 
+Is this good for my project?
+----------------------------
+
+It depends on your project.
+
+- As a **transition from vibe-coding**. As long as you plain vibe-code and things work flawlessly, then you probably don't need it yet. When things start skidding, when the AI starts to get confused and changes or breaks things you care about, then it's time to do `/telescopic a few words about what has gone wrong`. Then e.g. `ok write all docs`.
+- As a **refresher**. You have a working project, yet it doesn't fit all in your head. Perhaps you worked on it in the past and don't remember everything. Do a `/telescopic a few optional words about your current intent` pass and you'll get a fresh look on it. The docs will provide a clear picture to help you drive the project. Then e.g. `ok apply all doc improvements`.
+- As a **diving-into-the-unknown gear**. You're facing an unknown code base, imperfectly documented. Do a `/telescopic a few optional words about your current intent` pass and you'll get a structured report. Then e.g. `ok apply all doc improvements`.
+- As a **new project springboard**. New non-obvious project from scratch? You have some ideas at several levels. Discuss the ideas then `/telescopic interview me, write docs as we go` and your project gets on sustainable tracks.
+- As a **structuring aid**. Any time you wish some structuring help, `/telescopic a few optional words`.
+
 What you get
 ------------
 
