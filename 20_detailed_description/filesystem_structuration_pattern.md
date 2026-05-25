@@ -40,7 +40,7 @@ The presentation order of the files inside `foo/` is the order they are listed i
 The prefix is a deliberate choice between these two intents, not decoration. When neither applies, no prefix is needed.
 
 Recursion: the pattern applies at every level
-----------------------------------------------
+---------------------------------------------
 
 `foo/<name>.md` is itself a `foo.md` for a `foo/` of its own. The pattern nests without limit.
 
