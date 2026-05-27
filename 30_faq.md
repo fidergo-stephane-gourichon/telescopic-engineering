@@ -27,20 +27,18 @@ A suggested layout:
 README.md
 doc-telescopic.md
 doc-telescopic/
-  10_capability_specification/
-  20_functional_specification/
-  30_architecture/
-  40_implementation/
+  10_capability_specification.md
+  20_functional_specification.md
+  30_architecture.md
+  40_implementation.md
 src/
 ```
 
-The numeric prefixes enforce sort order in directory listings so the chain reads top-to-bottom. The gaps (10, 20, 30, 40) leave room for inserting a stage without renumbering. Each stage is a directory (not a file) from the start, so companion artifacts (acceptance tests, decision records) have a natural home without renaming.
+The numeric prefixes enforce sort order in directory listings so the chain reads top-to-bottom. The gaps (10, 20, 30, 40) leave room for inserting a stage without renumbering.
 
-README.md lives at the repository root (stage 0, implicitly) since that is where repository visitors expect it. Code lives outside `doc-telescopic/` in its own tree.
+Each stage is a file paired with an optional sibling directory of the same name: `10_capability_specification.md` carries the content; `10_capability_specification/` appears once the stage has overflow or companion artifacts (decision records, acceptance tests) to host. This is the same recurring convention applied at every level -- see [the filesystem structuration pattern](20_detailed_description/filesystem_structuration_pattern.md).
 
-Each directory contains at least a main document. The naming convention for the main document is a project-level decision (e.g. always `spec.md`, or matching the directory name).
-
-`doc-telescopic.md` is the index of `doc-telescopic/`: it briefly introduces the method and enumerates the stage directories. This file-plus-directory pairing is a single recurring convention applied at every level -- see [the filesystem structuration pattern](20_detailed_description/filesystem_structuration_pattern.md).
+README.md lives at the repository root since that is where repository visitors expect it; it is a conventional entry point, not part of the pattern instance. Code lives outside `doc-telescopic/` in its own tree.
 
 Notice that if the functional specification is not in the same repository as the code, then the acceptance tests are stored with the functional specification, not with the code. In other words, position in the chain, not file style or tools, determines what is stored with what.
 
