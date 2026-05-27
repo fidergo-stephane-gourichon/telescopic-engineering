@@ -105,7 +105,7 @@ For example:
 
 Create `.telescopic/` at the project root if it does not exist.
 
-**Linking convention for all generated files** (report.md, todo.md, decisions.md): always link to the most precise location — prefer a section anchor over a bare file link whenever the target is a specific heading. Link text is a short human-readable label; URL uses the `../`-prefixed project-root-relative path with an `#anchor` suffix when applicable.
+**Linking convention for all generated files** (report.md, todo.md, declined.md): always link to the most precise location — prefer a section anchor over a bare file link whenever the target is a specific heading. Link text is a short human-readable label; URL uses the `../`-prefixed project-root-relative path with an `#anchor` suffix when applicable.
 
 Write `.telescopic/report.md` with:
 
@@ -142,7 +142,7 @@ Invite the user to read the report. Propose an action list. Order actions from l
 
 If the existing documents are already clearly separated by stage and their contents match the desired structure closely enough, propose a rename/move plan as the first action — before any content edits. A rename/move plan groups all file relocations and cross-reference updates into a single proposal for the user to review and approve before anything is applied. The test: would an experienced reader recognize the existing document as clearly belonging to the target stage, with no significant scope violations? If yes, moving it is the right first step.
 
-Ask the user which actions to approve. If the user declines or disagrees with any proposed action, record it in `.telescopic/decisions.md` with a one-line summary of what was declined and, if the user gave a reason, the reason. Commit this file and tell the user its path so they can edit or remove the entry if they change their mind later.
+Ask the user which actions to approve. If the user declines or disagrees with any proposed action, record it in `.telescopic/declined.md` with a one-line summary of what was declined and, if the user gave a reason, the reason. Commit this file and tell the user its path so they can edit or remove the entry if they change their mind later. (The name avoids collision with stage-level `decisions.md` files, which record project decisions, not skill-proposal rejections.)
 
 Once confirmed, write the approved actions as a bullet list in `.telescopic/todo.md`, then commit:
 
