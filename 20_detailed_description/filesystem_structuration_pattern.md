@@ -44,20 +44,24 @@ Recursion: the pattern applies at every level
 
 `foo/<name>.md` is itself a `foo.md` for a `foo/` of its own. The pattern nests without limit.
 
-It also reaches the top. The documentation root is just another instance: a populated `doc-telescopic/` directory implies a `doc-telescopic.md` beside it.
+It also reaches the top. The documentation root is just another instance: a populated `doc-telescopic/` directory implies a `doc-telescopic.md` beside it. And each stage is itself an instance: a populated `10_capability_specification/` implies a `10_capability_specification.md` beside it.
 
 ``` default
-README.md
-doc-telescopic.md          <- the root index
+README.md                            <- conventional entry point (see below)
+doc-telescopic.md                    <- the root index
 doc-telescopic/
-  10_capability_specification/
+  10_capability_specification.md     <- stage entry
+  10_capability_specification/       <- appears once overflow or companion artifacts exist
+  20_functional_specification.md
   20_functional_specification/
-  30_architecture/
-  40_implementation/
+  30_architecture.md
+  40_implementation.md
 src/
 ```
 
-`doc-telescopic.md` briefly introduces the telescopic engineering method, links to <https://github.com/fidergo-stephane-gourichon/telescopic-engineering>, and enumerates the stage directories in order. It is the index of `doc-telescopic/`, exactly as any `foo.md` is the index of its `foo/`.
+`doc-telescopic.md` briefly introduces the telescopic engineering method, links to <https://github.com/fidergo-stephane-gourichon/telescopic-engineering>, and enumerates the stage entry files in order. It is the index of `doc-telescopic/`, exactly as any `foo.md` is the index of its `foo/`.
+
+`README.md` is not part of the pattern instance: it sits beside the root index as a separate, conventional entry point that repository visitors expect at the top level. It is the one acknowledged carve-out; the pattern itself otherwise applies uniformly from root to leaves.
 
 Empty stages
 ------------
