@@ -121,12 +121,12 @@ Write `.telescopic/report.md` with:
 
   ### doc-telescopic/
 
-  | File                                                                                         | Stage           | Notes |
-  |----------------------------------------------------------------------------------------------|-----------------|-------|
-  | [10_capability_specification/spec.md](../doc-telescopic/10_capability_specification/spec.md) | capability-spec |       |
-  | [20_functional_specification/spec.md](../doc-telescopic/20_functional_specification/spec.md) | functional-spec |       |
+  | File                                                                               | Stage           | Notes |
+  |------------------------------------------------------------------------------------|-----------------|-------|
+  | [10_capability_specification.md](../doc-telescopic/10_capability_specification.md) | capability-spec |       |
+  | [20_functional_specification.md](../doc-telescopic/20_functional_specification.md) | functional-spec |       |
 
-- A **Issues found** section. Have sub-section for each observed severity (`must fix` / `should fix` / `consider`). Consider another level of subsection for "kind of violation", unless it makes little sense. Then a bullet list of relevant issues. Apply the linking convention above: use a section anchor whenever possible (e.g. `[func spec § Introduction](../doc-telescopic/20_functional_specification/spec.md#introduction)`); bare file link only when the issue spans the whole document.
+- A **Issues found** section. Have sub-section for each observed severity (`must fix` / `should fix` / `consider`). Consider another level of subsection for "kind of violation", unless it makes little sense. Then a bullet list of relevant issues. Apply the linking convention above: use a section anchor whenever possible (e.g. `[func spec § Introduction](../doc-telescopic/20_functional_specification.md#introduction)`); bare file link only when the issue spans the whole document.
 
 Then commit:
 
@@ -164,7 +164,7 @@ For each item:
 - Remove that item from `.telescopic/todo.md`.
 - One unit of work, one commit, e.g.:
   ``` default
-  git add 20_functional_specification/spec.md .telescopic/todo.md ; git commit -m "telescopic: Shorten functional spec intro to one sentence"
+  git add 20_functional_specification.md .telescopic/todo.md ; git commit -m "telescopic: Shorten functional spec intro to one sentence"
   ```
 
 When `.telescopic/todo.md` becomes empty, report completion and confirm that all approved changes have been applied.
