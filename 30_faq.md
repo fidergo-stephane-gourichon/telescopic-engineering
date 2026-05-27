@@ -62,7 +62,9 @@ For example, at each stage have a subsection about each relevant concern. This o
 
 When a cross-cutting concern grows large enough that its subsections dominate the stage documents, project staff may decide to give it its own parallel document chain at the relevant stages (e.g. a dedicated security capability specification, security functional specification, etc.). This is a project-level decision, not a rule of this system.
 
-Decision records are historical artifacts whose goal is to record what was evaluated, the reasons, and the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the capability specification stage, at the functional specification stage, at the architecture stage, at the implementation stage. They live in a `decisions/` directory co-located with the stage they affect.
+Decision records are historical artifacts whose goal is to record what was evaluated, the reasons, and the decision, for future reference. They are to be done at whatever stage is relevant for the topic. There may be decision records at the capability specification stage, at the functional specification stage, at the architecture stage, at the implementation stage.
+
+Each stage that has decisions to record gets a `decisions.md` file inside its sibling directory (e.g. `10_capability_specification/decisions.md`), and the individual records live as immutable, dated files in a further `decisions/` sub-directory (e.g. `10_capability_specification/decisions/2026-05-27_drop-spec-md.md`). The `decisions.md` file is short by design: a one-paragraph preamble stating the convention ("this file indexes decision records for the *capability specification* stage; each record lives as an immutable, timestamped file in `decisions/`") followed by an ordered list of links to the records. This is the pattern's normal `foo.md` + `foo/` instance applied to decisions; nothing special.
 
 Changelogs are a different beast, they document product history, they are off this track.
 
