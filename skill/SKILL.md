@@ -172,6 +172,8 @@ When `.telescopic/todo.md` becomes empty, report completion and confirm that all
 Notes
 -----
 
+- **Link generously.** Whenever any part of the content refers to another part — an upstream stage, a sibling document, a decision record, a specific section — write an actual link to it, pointing at the most precise location available (a section anchor over a bare file link). Telescopic docs live by navigation: a reference left as plain prose is a missed connection. This applies to all content you author or edit, not only to the generated `.telescopic/` files.
+- **Check links.** After writing, moving, or renaming content, verify every link resolves: the target file exists, and when an `#anchor` is used the matching heading exists. Fix broken links, or flag them if the fix is not obvious. Renames and section moves are the usual cause of breakage, so re-check links in any file that pointed *into* something you just moved.
 - Never silently skip an issue. The user might be waiting for you to raise it. Always flag and let the user decide.
 - When an action would move content between files, show the user a diff-style preview before applying.
 - The method allows skipping or merging stages for small projects. When flagging a missing stage as "may be intentionally absent", suggest the lightweight option: a single-sentence acknowledgement file rather than a full document.
