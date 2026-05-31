@@ -11,7 +11,7 @@ If the project has no README.md, or a very insufficient one, it is best to flag 
 The hook
 --------
 
-A one-sentence pitch immediately after the title, before any section heading, tells the visitor what the project does. This is the single most-read line -- visitors who read nothing else will read this. Examples:
+A one-to-few-sentence pitch immediately after the title, before any section heading, tells the visitor what the project does. This is the single most-read line -- visitors who read nothing else will read this. Examples:
 
 - "Find files across many external drives without remembering which one has them."
 
