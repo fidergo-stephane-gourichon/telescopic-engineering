@@ -29,7 +29,6 @@ A variation than often makes sense is to start with a sentence focused on what t
 
 In a telescopic analysis, a hook that fails this test is always a **must-fix** issue, raised without waiting for the user to notice it. The hook is the highest-visibility text in the entire project; a weak or mechanism-only hook is a more urgent problem than most structural issues deeper in the document chain.
 
-
 Near-universal sections
 -----------------------
 

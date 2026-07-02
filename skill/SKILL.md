@@ -12,14 +12,14 @@ Applies the telescopic engineering method to a project's progress.
 The *default behavior* of this skill focuses on documentation: surveys existing docs, maps them to stages, identifies gaps and rule violations, proposes ordered changes, and applies them one at a time with commits. Progress is stored in `.telescopic/` so work survives across sessions and conversations.
 
 Step 0 -- Heed user intent
--------------------------
+--------------------------
 
 If `$ARGUMENTS` is non-empty it's probably a hint about the user's intent, follow it. Else the conversation context might have hints about user intents, wishes and interaction/approval style.
 
 The user intent may easily totally override the *default behavior* of this skill. For example, the user mentions they want to add feature foo or whatever.
 
 Step 1 -- Read the method reference
-----------------------------------
+-----------------------------------
 
 Read these files in all cases. They are the authoritative reference for the telescopic engineering method:
 
