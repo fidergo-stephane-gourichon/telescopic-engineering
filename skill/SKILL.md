@@ -23,9 +23,9 @@ Step 1 -- Read the method reference
 
 Read these files in all cases. They are the authoritative reference for the telescopic engineering method:
 
-- `~/.claude/skills/telescopic/docs/20_detailed_description.md` -- stage definitions and rules
-- `~/.claude/skills/telescopic/docs/30_faq.md` -- FAQ including the recommended `doc-telescopic/` layout
-- `~/.claude/skills/telescopic/docs/20_detailed_description/readme_writing.md` -- catalog of README sections
+- [stage definitions and rules](../../.claude/skills/telescopic/docs/20_detailed_description.md)
+- [FAQ including the recommended `doc-telescopic/` layout](../../.claude/skills/telescopic/docs/30_faq.md)
+- [catalog of README sections](../../.claude/skills/telescopic/docs/20_detailed_description/readme_writing.md)
 
 Step 2 -- Act
 -------------
